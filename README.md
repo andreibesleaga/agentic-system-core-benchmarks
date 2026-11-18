@@ -61,13 +61,13 @@ Figures on the page that come from the engine's own measurement record (`docs/ME
 
 ## Inputs
 
-The harness reads the engine at tag `v1.1.0` and the two built nodes. The engine and the main node are public repositories. The source repository of the patterns node is not public; its published site is (patterns.agenticsystemcore.com). Checking the figures with `verify.js` needs none of them. Running the studies again needs all three, so a reader without the patterns repository can re-run only the parts that use the main node and the engine's example Bundles.
+The harness reads the engine at tag `v1.1.0` and the two built nodes. The engine and the main node are public repositories. The patterns node is kept in a private working copy, which also holds unpublished drafts; its published items are public in [andreibesleaga/agsc-demo-node](https://github.com/andreibesleaga/agsc-demo-node), and at commit `6bb5769` of that repository the card text is the text the studies used (later commits shorten and correct the cards). Checking the figures with `verify.js` needs none of them. The studies ran on the working copy; a re-run from the public copy has not been tried here, and one case (the held-back items) needs the drafts, which are not public.
 
 | Input | Repository | Commit the studies ran at |
 |---|---|---|
 | Engine, tag `v1.1.0` (run `npm ci` in it) | [andreibesleaga/agentic-system-core](https://github.com/andreibesleaga/agentic-system-core) | `ec7a67ff7efa2aa42f83bb018596af37112384ea` (the commit of the tag) |
 | Main node, agenticsystemcore.com | [andreibesleaga/AgenticSystemCore.com](https://github.com/andreibesleaga/AgenticSystemCore.com) | `5706b1ecb561ffc95cde87a1b52c401629454eba` (its `www/` holds 237 files; later commits add pages and change that number) |
-| Patterns node, patterns.agenticsystemcore.com | `AgenticSystemCore-Patterns` (not public) | `22946dc3bcfe3cfb7846edcf938734fa3bc0fc0f` |
+| Patterns node, patterns.agenticsystemcore.com | `AgenticSystemCore-Patterns` (private working copy); published items: [andreibesleaga/agsc-demo-node](https://github.com/andreibesleaga/agsc-demo-node) at `6bb5769` | `22946dc3bcfe3cfb7846edcf938734fa3bc0fc0f` |
 
 ```sh
 mkdir work && cd work
