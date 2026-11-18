@@ -1,0 +1,469 @@
+{
+  "nodes": {
+    "example-engine": {
+      "nquads_statements": 569,
+      "questions": [
+        {
+          "answered": 16,
+          "failed": 0,
+          "number": 1,
+          "question": "If I choose X, what else must I take?",
+          "ran": 81,
+          "subjects": 81
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 2,
+          "question": "What can never go with X?",
+          "ran": 81,
+          "subjects": 81
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 3,
+          "question": "What replaced X, directly or through a chain?",
+          "ran": 81,
+          "subjects": 81
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 4,
+          "question": "What does X need that nobody in my selection provides?"
+        },
+        {
+          "answered": 18,
+          "failed": 0,
+          "number": 5,
+          "question": "What verifies X, and what does X verify?",
+          "ran": 81,
+          "subjects": 81
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 6,
+          "question": "What blocks task T, directly or through a chain?",
+          "ran": 81,
+          "subjects": 81
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 7,
+          "question": "Where did lesson L come from?",
+          "ran": 81,
+          "subjects": 81
+        },
+        {
+          "answered": 1,
+          "failed": 0,
+          "number": 8,
+          "question": "Which items sit under cluster C and its sub-clusters?",
+          "ran": 81,
+          "subjects": 81
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 9,
+          "question": "Which of my selected items are stale, draft or deprecated?"
+        },
+        {
+          "answered": 31,
+          "failed": 0,
+          "number": 10,
+          "question": "Which sources back X, and which other items share them?",
+          "ran": 81,
+          "subjects": 81
+        }
+      ],
+      "shacl_conforms": true,
+      "shacl_results_by_severity": {},
+      "statements_by_vocabulary": {
+        "Dublin Core": 116,
+        "RDF": 81,
+        "SKOS": 118,
+        "own": 188,
+        "schema.org": 66
+      },
+      "turtle_equals_nquads": true,
+      "turtle_statements": 569
+    },
+    "example-linked-sites": {
+      "nquads_statements": 292,
+      "questions": [
+        {
+          "answered": 6,
+          "failed": 0,
+          "number": 1,
+          "question": "If I choose X, what else must I take?",
+          "ran": 41,
+          "subjects": 41
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 2,
+          "question": "What can never go with X?",
+          "ran": 41,
+          "subjects": 41
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 3,
+          "question": "What replaced X, directly or through a chain?",
+          "ran": 41,
+          "subjects": 41
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 4,
+          "question": "What does X need that nobody in my selection provides?"
+        },
+        {
+          "answered": 8,
+          "failed": 0,
+          "number": 5,
+          "question": "What verifies X, and what does X verify?",
+          "ran": 41,
+          "subjects": 41
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 6,
+          "question": "What blocks task T, directly or through a chain?",
+          "ran": 41,
+          "subjects": 41
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 7,
+          "question": "Where did lesson L come from?",
+          "ran": 41,
+          "subjects": 41
+        },
+        {
+          "answered": 1,
+          "failed": 0,
+          "number": 8,
+          "question": "Which items sit under cluster C and its sub-clusters?",
+          "ran": 41,
+          "subjects": 41
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 9,
+          "question": "Which of my selected items are stale, draft or deprecated?"
+        },
+        {
+          "answered": 16,
+          "failed": 0,
+          "number": 10,
+          "question": "Which sources back X, and which other items share them?",
+          "ran": 41,
+          "subjects": 41
+        }
+      ],
+      "shacl_conforms": true,
+      "shacl_results_by_severity": {},
+      "statements_by_vocabulary": {
+        "Dublin Core": 41,
+        "RDF": 41,
+        "SKOS": 68,
+        "own": 106,
+        "schema.org": 36
+      },
+      "turtle_equals_nquads": true,
+      "turtle_statements": 292
+    },
+    "example-tool-server": {
+      "nquads_statements": 350,
+      "questions": [
+        {
+          "answered": 10,
+          "failed": 0,
+          "number": 1,
+          "question": "If I choose X, what else must I take?",
+          "ran": 52,
+          "subjects": 52
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 2,
+          "question": "What can never go with X?",
+          "ran": 52,
+          "subjects": 52
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 3,
+          "question": "What replaced X, directly or through a chain?",
+          "ran": 52,
+          "subjects": 52
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 4,
+          "question": "What does X need that nobody in my selection provides?"
+        },
+        {
+          "answered": 11,
+          "failed": 0,
+          "number": 5,
+          "question": "What verifies X, and what does X verify?",
+          "ran": 52,
+          "subjects": 52
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 6,
+          "question": "What blocks task T, directly or through a chain?",
+          "ran": 52,
+          "subjects": 52
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 7,
+          "question": "Where did lesson L come from?",
+          "ran": 52,
+          "subjects": 52
+        },
+        {
+          "answered": 1,
+          "failed": 0,
+          "number": 8,
+          "question": "Which items sit under cluster C and its sub-clusters?",
+          "ran": 52,
+          "subjects": 52
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 9,
+          "question": "Which of my selected items are stale, draft or deprecated?"
+        },
+        {
+          "answered": 21,
+          "failed": 0,
+          "number": 10,
+          "question": "Which sources back X, and which other items share them?",
+          "ran": 52,
+          "subjects": 52
+        }
+      ],
+      "shacl_conforms": true,
+      "shacl_results_by_severity": {},
+      "statements_by_vocabulary": {
+        "Dublin Core": 53,
+        "RDF": 52,
+        "SKOS": 84,
+        "own": 115,
+        "schema.org": 46
+      },
+      "turtle_equals_nquads": true,
+      "turtle_statements": 350
+    },
+    "main": {
+      "nquads_statements": 377,
+      "questions": [
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 1,
+          "question": "If I choose X, what else must I take?",
+          "ran": 57,
+          "subjects": 57
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 2,
+          "question": "What can never go with X?",
+          "ran": 57,
+          "subjects": 57
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 3,
+          "question": "What replaced X, directly or through a chain?",
+          "ran": 57,
+          "subjects": 57
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 4,
+          "question": "What does X need that nobody in my selection provides?"
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 5,
+          "question": "What verifies X, and what does X verify?",
+          "ran": 57,
+          "subjects": 57
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 6,
+          "question": "What blocks task T, directly or through a chain?",
+          "ran": 57,
+          "subjects": 57
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 7,
+          "question": "Where did lesson L come from?",
+          "ran": 57,
+          "subjects": 57
+        },
+        {
+          "answered": 3,
+          "failed": 0,
+          "number": 8,
+          "question": "Which items sit under cluster C and its sub-clusters?",
+          "ran": 57,
+          "subjects": 57
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 9,
+          "question": "Which of my selected items are stale, draft or deprecated?"
+        },
+        {
+          "answered": 14,
+          "failed": 0,
+          "number": 10,
+          "question": "Which sources back X, and which other items share them?",
+          "ran": 57,
+          "subjects": 57
+        }
+      ],
+      "shacl_conforms": true,
+      "shacl_results_by_severity": {},
+      "statements_by_vocabulary": {
+        "Dublin Core": 78,
+        "RDF": 57,
+        "SKOS": 62,
+        "own": 144,
+        "schema.org": 36
+      },
+      "turtle_equals_nquads": true,
+      "turtle_statements": 377
+    },
+    "patterns": {
+      "nquads_statements": 2353,
+      "questions": [
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 1,
+          "question": "If I choose X, what else must I take?",
+          "ran": 225,
+          "subjects": 225
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 2,
+          "question": "What can never go with X?",
+          "ran": 225,
+          "subjects": 225
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 3,
+          "question": "What replaced X, directly or through a chain?",
+          "ran": 225,
+          "subjects": 225
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 4,
+          "question": "What does X need that nobody in my selection provides?"
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 5,
+          "question": "What verifies X, and what does X verify?",
+          "ran": 225,
+          "subjects": 225
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 6,
+          "question": "What blocks task T, directly or through a chain?",
+          "ran": 225,
+          "subjects": 225
+        },
+        {
+          "answered": 0,
+          "failed": 0,
+          "number": 7,
+          "question": "Where did lesson L come from?",
+          "ran": 225,
+          "subjects": 225
+        },
+        {
+          "answered": 20,
+          "failed": 0,
+          "number": 8,
+          "question": "Which items sit under cluster C and its sub-clusters?",
+          "ran": 225,
+          "subjects": 225
+        },
+        {
+          "needs_input": "a selection of items",
+          "number": 9,
+          "question": "Which of my selected items are stale, draft or deprecated?"
+        },
+        {
+          "answered": 50,
+          "failed": 0,
+          "number": 10,
+          "question": "Which sources back X, and which other items share them?",
+          "ran": 225,
+          "subjects": 225
+        }
+      ],
+      "shacl_conforms": true,
+      "shacl_results_by_severity": {},
+      "statements_by_vocabulary": {
+        "Dublin Core": 704,
+        "OWL": 1,
+        "RDF": 227,
+        "RDFS": 9,
+        "SKOS": 568,
+        "other": 2,
+        "own": 699,
+        "schema.org": 143
+      },
+      "turtle_equals_nquads": true,
+      "turtle_statements": 2353
+    }
+  },
+  "ontology": {
+    "alignment_statements": 8,
+    "classes": 19,
+    "datatype_properties": 22,
+    "object_properties": 19,
+    "statements": 318
+  },
+  "shapes_statements": 609,
+  "tools": {
+    "pyshacl": "0.40.2",
+    "rdflib": "7.6.0"
+  }
+}

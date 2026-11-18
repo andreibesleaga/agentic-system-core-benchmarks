@@ -1,0 +1,21 @@
+SPDX-License-Identifier: Apache-2.0 AND CC-BY-4.0
+
+agentic-system-core-benchmarks
+Copyright 2026 Andrei N. Besleaga
+
+Which licence covers which part:
+- the code (src/, tests/, the shell scripts, verify.js) and the documents that describe it
+  (README files, DECISIONS.md): Apache License 2.0 (LICENSE, LICENSES/Apache-2.0.txt);
+- the data (questions/, results/, reports/ and the generated REPORT.md files): Creative Commons
+  Attribution 4.0 International (LICENSE-DATA, LICENSES/CC-BY-4.0.txt).
+
+Two limits on the data licence:
+- The rows hold excerpts of the published items of the two nodes (answers, retrieved passages,
+  tool results). Those excerpts stay under the content terms of the node they came from, as stated
+  in the LICENSE-CONTENT file of that node's repository.
+- The rows hold answers written by language models. Their names are recorded in each row.
+
+The licence texts are the unmodified texts, copied from the engine repository
+(github.com/andreibesleaga/agentic-system-core, LICENSES/). The canonical sources are
+https://www.apache.org/licenses/LICENSE-2.0.txt and
+https://creativecommons.org/licenses/by/4.0/legalcode.txt.

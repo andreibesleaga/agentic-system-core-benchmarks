@@ -1,0 +1,3335 @@
+{
+ "bundles": [
+  {
+   "name": "engine",
+   "items": 32,
+   "requires_edges": 34,
+   "edges_total": 104
+  },
+  {
+   "name": "tool-server",
+   "items": 22,
+   "requires_edges": 12,
+   "edges_total": 43
+  },
+  {
+   "name": "linked-sites",
+   "items": 17,
+   "requires_edges": 9,
+   "edges_total": 42
+  }
+ ],
+ "questions": 30,
+ "models": [
+  "qwen2.5-coder:7b",
+  "gemma3:4b"
+ ],
+ "context_tokens_limit": 16384,
+ "gold_source": "graph.nq of each Bundle build (the published graph). G1 is the gold source itself.",
+ "summary": {
+  "G1_graph_read": {
+   "n": 30,
+   "exact": 30,
+   "note": "same source as the gold: equal by construction"
+  },
+  "G2_tool_server": {
+   "n": 30,
+   "exact": 30,
+   "precision": 1,
+   "recall": 1
+  },
+  "B1|qwen2.5-coder:7b": {
+   "n": 30,
+   "exact": 16,
+   "precision": 0.822,
+   "recall": 0.725
+  },
+  "B2|qwen2.5-coder:7b": {
+   "n": 30,
+   "exact": 16,
+   "precision": 0.839,
+   "recall": 0.764
+  },
+  "W|qwen2.5-coder:7b": {
+   "n": 30,
+   "exact": 9,
+   "precision": 0.587,
+   "recall": 0.555
+  },
+  "B1|gemma3:4b": {
+   "n": 30,
+   "exact": 11,
+   "precision": 0.727,
+   "recall": 0.73
+  },
+  "B2|gemma3:4b": {
+   "n": 30,
+   "exact": 10,
+   "precision": 0.738,
+   "recall": 0.808
+  },
+  "W|gemma3:4b": {
+   "n": 30,
+   "exact": 9,
+   "precision": 0.551,
+   "recall": 0.597
+  }
+ },
+ "by_type": {
+  "direct": {
+   "n": 8,
+   "G2_exact": 8,
+   "B1|qwen2.5-coder:7b": 8,
+   "B2|qwen2.5-coder:7b": 7,
+   "W|qwen2.5-coder:7b": 7,
+   "B1|gemma3:4b": 6,
+   "B2|gemma3:4b": 6,
+   "W|gemma3:4b": 6
+  },
+  "inverse": {
+   "n": 8,
+   "G2_exact": 8,
+   "B1|qwen2.5-coder:7b": 4,
+   "B2|qwen2.5-coder:7b": 5,
+   "W|qwen2.5-coder:7b": 0,
+   "B1|gemma3:4b": 2,
+   "B2|gemma3:4b": 3,
+   "W|gemma3:4b": 0
+  },
+  "two-step": {
+   "n": 6,
+   "G2_exact": 6,
+   "B1|qwen2.5-coder:7b": 0,
+   "B2|qwen2.5-coder:7b": 0,
+   "W|qwen2.5-coder:7b": 0,
+   "B1|gemma3:4b": 0,
+   "B2|gemma3:4b": 0,
+   "W|gemma3:4b": 0
+  },
+  "closure-3": {
+   "n": 4,
+   "G2_exact": 4,
+   "B1|qwen2.5-coder:7b": 0,
+   "B2|qwen2.5-coder:7b": 0,
+   "W|qwen2.5-coder:7b": 0,
+   "B1|gemma3:4b": 0,
+   "B2|gemma3:4b": 0,
+   "W|gemma3:4b": 1
+  },
+  "verifies": {
+   "n": 2,
+   "G2_exact": 2,
+   "B1|qwen2.5-coder:7b": 2,
+   "B2|qwen2.5-coder:7b": 2,
+   "W|qwen2.5-coder:7b": 2,
+   "B1|gemma3:4b": 2,
+   "B2|gemma3:4b": 1,
+   "W|gemma3:4b": 1
+  },
+  "decided-by": {
+   "n": 2,
+   "G2_exact": 2,
+   "B1|qwen2.5-coder:7b": 2,
+   "B2|qwen2.5-coder:7b": 2,
+   "W|qwen2.5-coder:7b": 0,
+   "B1|gemma3:4b": 1,
+   "B2|gemma3:4b": 0,
+   "W|gemma3:4b": 1
+  }
+ },
+ "rows": [
+  {
+   "id": "t01",
+   "type": "direct",
+   "bundle": "engine",
+   "q": "Which items does \"Adapters\" require? Use the typed link \"requires\".",
+   "gold": [
+    "ports",
+    "shared-kernel"
+   ],
+   "G1": {
+    "answer": [
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 564,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "ports\nshared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1486,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "shared-kernel\nports\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1653,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "ports\nshared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1459,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "ports\nshared-kernel\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1631,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "ports\nshared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 7541
+    },
+    "gemma3:4b": {
+     "answer": [
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "- ports\n- shared-kernel\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 8451
+    }
+   }
+  },
+  {
+   "id": "t02",
+   "type": "direct",
+   "bundle": "engine",
+   "q": "Which items does \"Check the dependency rule\" require? Use the typed link \"requires\".",
+   "gold": [
+    "application-layer",
+    "shared-kernel"
+   ],
+   "G1": {
+    "answer": [
+     "application-layer",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "application-layer",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 564,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer",
+      "shared-kernel"
+     ],
+     "raw": "application-layer\nshared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1384,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "application-layer",
+      "shared-kernel"
+     ],
+     "raw": "application-layer\nshared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1545,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer",
+      "shared-kernel"
+     ],
+     "raw": "application-layer\nshared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1393,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "application-layer",
+      "shared-kernel"
+     ],
+     "raw": "application-layer\nshared-kernel\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1551,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer",
+      "shared-kernel"
+     ],
+     "raw": "application-layer\nshared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 7543
+    },
+    "gemma3:4b": {
+     "answer": [
+      "application-layer",
+      "shared-kernel"
+     ],
+     "raw": "application-layer\nshared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 8453
+    }
+   }
+  },
+  {
+   "id": "t03",
+   "type": "direct",
+   "bundle": "engine",
+   "q": "Which items does \"Knowledge\" require? Use the typed link \"requires\".",
+   "gold": [
+    "shared-kernel"
+   ],
+   "G1": {
+    "answer": [
+     "shared-kernel"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "shared-kernel"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 1200,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "shared-kernel"
+     ],
+     "raw": "shared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1196,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "shared-kernel"
+     ],
+     "raw": "shared-kernel\n---",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1342,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "markdown-bundle",
+      "shared-kernel"
+     ],
+     "raw": "shared-kernel\nmarkdown-bundle",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 1196,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "shared-kernel"
+     ],
+     "raw": "shared-kernel\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1342,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "shared-kernel"
+     ],
+     "raw": "shared-kernel",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 7540
+    },
+    "gemma3:4b": {
+     "answer": [
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "- shared-kernel\n- ports",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 8450
+    }
+   }
+  },
+  {
+   "id": "t04",
+   "type": "direct",
+   "bundle": "engine",
+   "q": "Which items does \"Check a discovery document\" require? Use the typed link \"requires\".",
+   "gold": [
+    "distribution"
+   ],
+   "G1": {
+    "answer": [
+     "distribution"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "distribution"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 361,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "distribution"
+     ],
+     "raw": "distribution",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1312,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "distribution\nknowledge\ngovernance\ncomposition\nboundary\nports\n",
+     "correct": false,
+     "p": 0.16666666666666666,
+     "r": 1,
+     "prompt_tokens": 1491,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "distribution"
+     ],
+     "raw": "distribution",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1283,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "distribution\nknowledge\ngovernance\ncomposition\nboundary\nports\n",
+     "correct": false,
+     "p": 0.16666666666666666,
+     "r": 1,
+     "prompt_tokens": 1455,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "distribution"
+     ],
+     "raw": "distribution",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 7543
+    },
+    "gemma3:4b": {
+     "answer": [
+      "distribution"
+     ],
+     "raw": "- distribution\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 8453
+    }
+   }
+  },
+  {
+   "id": "t05",
+   "type": "direct",
+   "bundle": "engine",
+   "q": "Which items does \"Verify the ledger\" require? Use the typed link \"requires\".",
+   "gold": [
+    "governance"
+   ],
+   "G1": {
+    "answer": [
+     "governance"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "governance"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 330,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "governance"
+     ],
+     "raw": "governance",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1396,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "governance",
+      "shared-kernel"
+     ],
+     "raw": "governance\nshared-kernel\n",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 1569,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "governance"
+     ],
+     "raw": "governance",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1412,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "governance",
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "governance\nshared-kernel\nports\n",
+     "correct": false,
+     "p": 0.3333333333333333,
+     "r": 1,
+     "prompt_tokens": 1577,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "governance"
+     ],
+     "raw": "governance",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 7542
+    },
+    "gemma3:4b": {
+     "answer": [
+      "governance"
+     ],
+     "raw": "- governance\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 8452
+    }
+   }
+  },
+  {
+   "id": "t06",
+   "type": "direct",
+   "bundle": "linked-sites",
+   "q": "Which items does \"Site b\" require? Use the typed link \"requires\".",
+   "gold": [
+    "bundle-b"
+   ],
+   "G1": {
+    "answer": [
+     "bundle-b"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "bundle-b"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 1098,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "bundle-b"
+     ],
+     "raw": "bundle-b",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1437,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "bundle-b"
+     ],
+     "raw": "bundle-b\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1620,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "bundle-b"
+     ],
+     "raw": "bundle-b",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1437,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "bundle-b"
+     ],
+     "raw": "bundle-b\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1620,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "bundle-b",
+      "static-host"
+     ],
+     "raw": "bundle-b\nstatic-host",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 4189
+    },
+    "gemma3:4b": {
+     "answer": [
+      "bundle-b"
+     ],
+     "raw": "- bundle-b\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 4684
+    }
+   }
+  },
+  {
+   "id": "t07",
+   "type": "direct",
+   "bundle": "tool-server",
+   "q": "Which items does \"List the tools\" require? Use the typed link \"requires\".",
+   "gold": [
+    "tool-server"
+   ],
+   "G1": {
+    "answer": [
+     "tool-server"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "tool-server"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 323,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-server"
+     ],
+     "raw": "tool-server",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1289,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "tool-server"
+     ],
+     "raw": "tool-server\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1450,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-server"
+     ],
+     "raw": "tool-server",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1234,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "tool-server"
+     ],
+     "raw": "tool-server\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1411,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-server"
+     ],
+     "raw": "tool-server",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 5312
+    },
+    "gemma3:4b": {
+     "answer": [
+      "page-tools",
+      "tool-server"
+     ],
+     "raw": "tool-server\npage-tools",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 5997
+    }
+   }
+  },
+  {
+   "id": "t08",
+   "type": "direct",
+   "bundle": "engine",
+   "q": "Which items does \"Run the conformance vectors\" require? Use the typed link \"requires\".",
+   "gold": [
+    "knowledge"
+   ],
+   "G1": {
+    "answer": [
+     "knowledge"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "knowledge"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 358,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "knowledge"
+     ],
+     "raw": "knowledge",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1394,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge"
+     ],
+     "raw": "knowledge\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1567,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "knowledge"
+     ],
+     "raw": "knowledge",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1357,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge"
+     ],
+     "raw": "knowledge\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1525,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "knowledge"
+     ],
+     "raw": "Knowledge",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 7544
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge"
+     ],
+     "raw": "- knowledge",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 8453
+    }
+   }
+  },
+  {
+   "id": "t09",
+   "type": "inverse",
+   "bundle": "engine",
+   "q": "Which items require \"Interchange\"?",
+   "gold": [
+    "application-layer",
+    "round-trip-an-export"
+   ],
+   "G1": {
+    "answer": [
+     "application-layer",
+     "round-trip-an-export"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "application-layer",
+     "round-trip-an-export"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 850,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [],
+     "raw": "Interchange",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1444,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "application-layer",
+      "round-trip-an-export"
+     ],
+     "raw": "Application layer\nInterchange\nRound-trip an export\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1597,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer",
+      "round-trip-an-export"
+     ],
+     "raw": "application-layer\nround-trip-an-export",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1341,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "application-layer",
+      "round-trip-an-export"
+     ],
+     "raw": "Interchange\nRound-trip an export\nApplication layer\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1499,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "composition",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "- Composition\n- Knowledge\n- Ports",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 7532
+    },
+    "gemma3:4b": {
+     "answer": [
+      "adapters",
+      "engine-parts"
+     ],
+     "raw": "# Interchange\n# adapters\n# engine-parts\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 8442
+    }
+   }
+  },
+  {
+   "id": "t10",
+   "type": "inverse",
+   "bundle": "tool-server",
+   "q": "Which items require \"Page tools\"?",
+   "gold": [
+    "compare-page-and-server"
+   ],
+   "G1": {
+    "answer": [
+     "compare-page-and-server"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "compare-page-and-server"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 604,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "compare-page-and-server"
+     ],
+     "raw": "compare-page-and-server",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1435,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge-bundle"
+     ],
+     "raw": "Page tools\nknowledge-bundle\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1617,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "compare-page-and-server"
+     ],
+     "raw": "compare-page-and-server",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1411,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "compare-page-and-server",
+      "decision-same-tools-on-the-page"
+     ],
+     "raw": "Page tools\nThe same tools on the page\nCompare the page and the server",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 1592,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [],
+     "raw": "page-tools",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 5302
+    },
+    "gemma3:4b": {
+     "answer": [],
+     "raw": "- page-tools",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 5987
+    }
+   }
+  },
+  {
+   "id": "t11",
+   "type": "inverse",
+   "bundle": "engine",
+   "q": "Which items require \"Adapters\"?",
+   "gold": [
+    "application-layer",
+    "run-the-port-tests"
+   ],
+   "G1": {
+    "answer": [
+     "application-layer",
+     "run-the-port-tests"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "application-layer",
+     "run-the-port-tests"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 564,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer"
+     ],
+     "raw": "Application layer\nAdapters",
+     "correct": false,
+     "p": 1,
+     "r": 0.5,
+     "prompt_tokens": 1549,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "agenticsystemcore-engine"
+     ],
+     "raw": "adapters.md\nagenticsystemcore-engine.md\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1722,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer"
+     ],
+     "raw": "Application layer\nAdapters",
+     "correct": false,
+     "p": 1,
+     "r": 0.5,
+     "prompt_tokens": 1549,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "agenticsystemcore-engine"
+     ],
+     "raw": "adapters.md\nagenticsystemcore-engine.md\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1722,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer",
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "interchange",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "Application layer\nBoundary\nComposition\nDistribution\nGovernance\nInterchange\nKnowledge\nPorts",
+     "correct": false,
+     "p": 0.125,
+     "r": 0.5,
+     "prompt_tokens": 7532
+    },
+    "gemma3:4b": {
+     "answer": [
+      "engine-parts"
+     ],
+     "raw": "# Adapters\n# Engine parts\n# adapters.md\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 8442
+    }
+   }
+  },
+  {
+   "id": "t12",
+   "type": "inverse",
+   "bundle": "engine",
+   "q": "Which items require \"Shared kernel\"?",
+   "gold": [
+    "adapters",
+    "check-the-dependency-rule",
+    "knowledge"
+   ],
+   "G1": {
+    "answer": [
+     "adapters",
+     "check-the-dependency-rule",
+     "knowledge"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "adapters",
+     "check-the-dependency-rule",
+     "knowledge"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 519,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "adapters",
+      "check-the-dependency-rule",
+      "knowledge"
+     ],
+     "raw": "Knowledge\nAdapters\nCheck the dependency rule",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1331,
+     "files_with_gold_or_subject": 4
+    },
+    "gemma3:4b": {
+     "answer": [
+      "adapters",
+      "check-the-dependency-rule"
+     ],
+     "raw": "shared-kernel\ncheck-the-dependency-rule\nadapters\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1507,
+     "files_with_gold_or_subject": 4
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "adapters",
+      "check-the-dependency-rule",
+      "knowledge"
+     ],
+     "raw": "Knowledge\nAdapters\nCheck the dependency rule",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1331,
+     "files_with_gold_or_subject": 4
+    },
+    "gemma3:4b": {
+     "answer": [
+      "adapters",
+      "check-the-dependency-rule"
+     ],
+     "raw": "shared-kernel\ncheck-the-dependency-rule\nadapters\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1507,
+     "files_with_gold_or_subject": 4
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer",
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "interchange",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "application-layer\nboundary\ncomposition\ndistribution\ngovernance\ninterchange\nknowledge\nports",
+     "correct": false,
+     "p": 0.125,
+     "r": 0.3333333333333333,
+     "prompt_tokens": 7532
+    },
+    "gemma3:4b": {
+     "answer": [
+      "agenticsystemcore-engine",
+      "application-layer",
+      "engine-parts"
+     ],
+     "raw": "# Engine parts\n# AgenticSystemCore engine\n# Application layer\n# shared-kernel\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 8442
+    }
+   }
+  },
+  {
+   "id": "t13",
+   "type": "inverse",
+   "bundle": "tool-server",
+   "q": "Which items require \"HTTP transport\"?",
+   "gold": [
+    "serve-over-http"
+   ],
+   "G1": {
+    "answer": [
+     "serve-over-http"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "serve-over-http"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 518,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "serve-over-http"
+     ],
+     "raw": "http-transport\nserve-over-http",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1394,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "decision-loopback-only",
+      "serve-over-http"
+     ],
+     "raw": "HTTP on loopback only\nHTTP transport\nServe over HTTP",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 1560,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "serve-over-http"
+     ],
+     "raw": "http-transport\nserve-over-http",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1394,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "decision-loopback-only",
+      "serve-over-http"
+     ],
+     "raw": "HTTP on loopback only\nHTTP transport\nServe over HTTP",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 1560,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-server-and-client"
+     ],
+     "raw": "http-transport\ntool-server-and-client",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 5302
+    },
+    "gemma3:4b": {
+     "answer": [],
+     "raw": "http-transport",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 5987
+    }
+   }
+  },
+  {
+   "id": "t14",
+   "type": "inverse",
+   "bundle": "engine",
+   "q": "Which items require \"Governance\"?",
+   "gold": [
+    "application-layer",
+    "distribution",
+    "interchange",
+    "verify-the-ledger"
+   ],
+   "G1": {
+    "answer": [
+     "application-layer",
+     "distribution",
+     "interchange",
+     "verify-the-ledger"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "application-layer",
+     "distribution",
+     "interchange",
+     "verify-the-ledger"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 904,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer",
+      "decision-dependency-rule",
+      "verify-the-ledger"
+     ],
+     "raw": "Application layer\nGovernance\nDecision-dependency-rule\nVerify the ledger",
+     "correct": false,
+     "p": 0.6666666666666666,
+     "r": 0.5,
+     "prompt_tokens": 1381,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "engine-parts",
+      "ports",
+      "run-the-port-tests",
+      "verify-the-ledger"
+     ],
+     "raw": "governance\nverify-the-ledger\n--- file run-the-port-tests.md ---\n---\ntype: procedure\ntitle: Run the port tests\ndescription: Run the port tests to ensure that the ports are working correctly.\ntags:\n  - checks\n  - engine\nclusters:\n  - engine-parts\nrequires:\n  - governance\nverifies:\n  - governance\nsourc",
+     "correct": false,
+     "p": 0.25,
+     "r": 0.25,
+     "prompt_tokens": 1533,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "application-layer",
+      "verify-the-ledger"
+     ],
+     "raw": "application-layer\nverify-the-ledger",
+     "correct": false,
+     "p": 1,
+     "r": 0.5,
+     "prompt_tokens": 1304,
+     "files_with_gold_or_subject": 4
+    },
+    "gemma3:4b": {
+     "answer": [
+      "application-layer",
+      "interchange",
+      "verify-the-ledger"
+     ],
+     "raw": "file governance.md\nfile application-layer.md\nfile verify-the-ledger.md\nfile interchange.md",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 1461,
+     "files_with_gold_or_subject": 4
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "distribution",
+      "interchange"
+     ],
+     "raw": "Distribution\nGovernance\nInterchange",
+     "correct": false,
+     "p": 1,
+     "r": 0.5,
+     "prompt_tokens": 7532
+    },
+    "gemma3:4b": {
+     "answer": [
+      "agenticsystemcore-engine",
+      "boundary",
+      "composition",
+      "engine-parts"
+     ],
+     "raw": "# AgenticSystemCore engine\n# Governance\n# Composition\n# Boundary\n# Engine parts",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 8441
+    }
+   }
+  },
+  {
+   "id": "t15",
+   "type": "inverse",
+   "bundle": "tool-server",
+   "q": "Which items require \"Knowledge Bundle\"?",
+   "gold": [
+    "check-the-bundle",
+    "page-tools",
+    "tool-server"
+   ],
+   "G1": {
+    "answer": [
+     "check-the-bundle",
+     "page-tools",
+     "tool-server"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "check-the-bundle",
+     "page-tools",
+     "tool-server"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 597,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "check-the-bundle",
+      "page-tools",
+      "tool-server"
+     ],
+     "raw": "tool-server\ncheck-the-bundle\npage-tools",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1306,
+     "files_with_gold_or_subject": 4
+    },
+    "gemma3:4b": {
+     "answer": [
+      "check-the-bundle",
+      "page-tools",
+      "tool-server"
+     ],
+     "raw": "Check the Bundle\nTool server\nPage tools\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1495,
+     "files_with_gold_or_subject": 4
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "check-the-bundle",
+      "page-tools",
+      "tool-server"
+     ],
+     "raw": "tool-server\ncheck-the-bundle\npage-tools",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1306,
+     "files_with_gold_or_subject": 4
+    },
+    "gemma3:4b": {
+     "answer": [
+      "check-the-bundle",
+      "page-tools",
+      "tool-server"
+     ],
+     "raw": "Check the Bundle\nTool server\nPage tools\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1495,
+     "files_with_gold_or_subject": 4
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "check-the-bundle",
+      "compare-page-and-server",
+      "list-the-tools",
+      "page-tools",
+      "prepare-a-change",
+      "serve-over-http",
+      "tool-server"
+     ],
+     "raw": "tool-server\npage-tools\ncheck-the-bundle\nlist-the-tools\nprepare-a-change\ncompare-page-and-server\nserve-over-http",
+     "correct": false,
+     "p": 0.42857142857142855,
+     "r": 1,
+     "prompt_tokens": 5302
+    },
+    "gemma3:4b": {
+     "answer": [
+      "page-tools"
+     ],
+     "raw": "- page-tools\n- knowledge-bundle",
+     "correct": false,
+     "p": 1,
+     "r": 0.3333333333333333,
+     "prompt_tokens": 5987
+    }
+   }
+  },
+  {
+   "id": "t16",
+   "type": "inverse",
+   "bundle": "engine",
+   "q": "Which items require \"Distribution\"?",
+   "gold": [
+    "application-layer",
+    "check-a-discovery-document"
+   ],
+   "G1": {
+    "answer": [
+     "application-layer",
+     "check-a-discovery-document"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "application-layer",
+     "check-a-discovery-document"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 1200,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "check-a-discovery-document"
+     ],
+     "raw": "check-a-discovery-document",
+     "correct": false,
+     "p": 1,
+     "r": 0.5,
+     "prompt_tokens": 1426,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "check-a-discovery-document"
+     ],
+     "raw": "distribution\ncheck-a-discovery-document\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.5,
+     "prompt_tokens": 1595,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "check-a-discovery-document"
+     ],
+     "raw": "check-a-discovery-document",
+     "correct": false,
+     "p": 1,
+     "r": 0.5,
+     "prompt_tokens": 1323,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "application-layer",
+      "check-a-discovery-document"
+     ],
+     "raw": "Distribution\napplication-layer\ncheck-a-discovery-document\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1497,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [],
+     "raw": "Distribution",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 7531
+    },
+    "gemma3:4b": {
+     "answer": [
+      "application-layer",
+      "interchange"
+     ],
+     "raw": "# Distribution\n# Interchange\n# application-layer\n",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.5,
+     "prompt_tokens": 8441
+    }
+   }
+  },
+  {
+   "id": "t17",
+   "type": "two-step",
+   "bundle": "engine",
+   "q": "Which items are required by the items that \"Interchange\" requires (the second step of the \"requires\" links)?",
+   "gold": [
+    "knowledge",
+    "ports",
+    "shared-kernel"
+   ],
+   "G1": {
+    "answer": [
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "tool_calls": 4,
+    "bytes_read": 3825,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "knowledge",
+      "ports"
+     ],
+     "raw": "knowledge\nports",
+     "correct": false,
+     "p": 1,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1336,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "knowledge\nports\ngovernance\n",
+     "correct": false,
+     "p": 0.6666666666666666,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1493,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "knowledge\ngovernance\nports",
+     "correct": false,
+     "p": 0.6666666666666666,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1336,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "interchange\nknowledge\ngovernance\nports",
+     "correct": false,
+     "p": 0.6666666666666666,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1493,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "other-tools-formats",
+      "ports"
+     ],
+     "raw": "- knowledge\n- governance\n- ports\n- other-tools-formats",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 7549
+    },
+    "gemma3:4b": {
+     "answer": [
+      "adapters",
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "knowledge",
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "adapters\nports\nshared-kernel\nknowledge\ngovernance\ncomposition\nboundary\ninterchange\ndistribution\n",
+     "correct": false,
+     "p": 0.375,
+     "r": 1,
+     "prompt_tokens": 8459
+    }
+   }
+  },
+  {
+   "id": "t18",
+   "type": "two-step",
+   "bundle": "tool-server",
+   "q": "Which items are required by the items that \"List the tools\" requires (the second step of the \"requires\" links)?",
+   "gold": [
+    "knowledge-bundle"
+   ],
+   "G1": {
+    "answer": [
+     "knowledge-bundle"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "knowledge-bundle"
+    ],
+    "correct": true,
+    "tool_calls": 2,
+    "bytes_read": 1649,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-server"
+     ],
+     "raw": "tool-server",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1237,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge-bundle",
+      "tool-server"
+     ],
+     "raw": "tool-server\nknowledge-bundle\n",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 1398,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-server"
+     ],
+     "raw": "tool-server",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1237,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge-bundle",
+      "tool-server"
+     ],
+     "raw": "tool-server\nknowledge-bundle\n",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 1398,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-server"
+     ],
+     "raw": "tool-server",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 5320
+    },
+    "gemma3:4b": {
+     "answer": [
+      "http-transport",
+      "tool-server"
+     ],
+     "raw": "tool-server\nhttp-transport",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 6005
+    }
+   }
+  },
+  {
+   "id": "t19",
+   "type": "two-step",
+   "bundle": "engine",
+   "q": "Which items are required by the items that \"Compose a Harness\" requires (the second step of the \"requires\" links)?",
+   "gold": [
+    "knowledge",
+    "ports"
+   ],
+   "G1": {
+    "answer": [
+     "knowledge",
+     "ports"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "knowledge",
+     "ports"
+    ],
+    "correct": true,
+    "tool_calls": 2,
+    "bytes_read": 993,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "composition"
+     ],
+     "raw": "composition",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1254,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "composition",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "composition\nknowledge\nports",
+     "correct": false,
+     "p": 0.6666666666666666,
+     "r": 1,
+     "prompt_tokens": 1405,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "composition"
+     ],
+     "raw": "composition",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1254,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "composition",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "composition\nknowledge\nports",
+     "correct": false,
+     "p": 0.6666666666666666,
+     "r": 1,
+     "prompt_tokens": 1405,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "composition"
+     ],
+     "raw": "composition",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 7550
+    },
+    "gemma3:4b": {
+     "answer": [
+      "composition",
+      "engine-parts",
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "engine-parts\nknowledge\ngovernance\ncomposition\nports\n---",
+     "correct": false,
+     "p": 0.4,
+     "r": 1,
+     "prompt_tokens": 8460
+    }
+   }
+  },
+  {
+   "id": "t20",
+   "type": "two-step",
+   "bundle": "engine",
+   "q": "Which items are required by the items that \"Governance\" requires (the second step of the \"requires\" links)?",
+   "gold": [
+    "shared-kernel"
+   ],
+   "G1": {
+    "answer": [
+     "shared-kernel"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "shared-kernel"
+    ],
+    "correct": true,
+    "tool_calls": 3,
+    "bytes_read": 2975,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "ports"
+     ],
+     "raw": "ports",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1163,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge",
+      "ports"
+     ],
+     "raw": "Knowledge\nPorts\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1296,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "knowledge",
+      "ports"
+     ],
+     "raw": "knowledge\nports",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1273,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge",
+      "ports"
+     ],
+     "raw": "Knowledge\nPorts\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 1429,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "knowledge",
+      "ports"
+     ],
+     "raw": "- knowledge\n- ports",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 7549
+    },
+    "gemma3:4b": {
+     "answer": [
+      "agenticsystemcore-engine",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "agenticsystemcore-engine\nknowledge\nports\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 8458
+    }
+   }
+  },
+  {
+   "id": "t21",
+   "type": "two-step",
+   "bundle": "engine",
+   "q": "Which items are required by the items that \"Application layer\" requires (the second step of the \"requires\" links)?",
+   "gold": [
+    "boundary",
+    "composition",
+    "governance",
+    "knowledge",
+    "ports",
+    "shared-kernel"
+   ],
+   "G1": {
+    "answer": [
+     "boundary",
+     "composition",
+     "governance",
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "boundary",
+     "composition",
+     "governance",
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "tool_calls": 8,
+    "bytes_read": 7354,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "adapters",
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "interchange"
+     ],
+     "raw": "governance\ncomposition\nboundary\ninterchange\ndistribution\nadapters",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.5,
+     "prompt_tokens": 1322,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "adapters",
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "interchange",
+      "knowledge"
+     ],
+     "raw": "knowledge\ngovernance\ncomposition\nboundary\ninterchange\ndistribution\nadapters\n",
+     "correct": false,
+     "p": 0.5714285714285714,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1487,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "adapters",
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "interchange",
+      "knowledge",
+      "markdown-bundle"
+     ],
+     "raw": "adapters\nboundary\ncomposition\ndistribution\ngovernance\ninterchange\nknowledge\nmarkdown-bundle\nnone",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1322,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "adapters",
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "interchange",
+      "knowledge"
+     ],
+     "raw": "knowledge\ngovernance\ncomposition\nboundary\ninterchange\ndistribution\nadapters\n",
+     "correct": false,
+     "p": 0.5714285714285714,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1488,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "adapters",
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "interchange",
+      "knowledge",
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "shared-kernel\nports\nknowledge\ngovernance\ncomposition\nboundary\ninterchange\ndistribution\nadapters",
+     "correct": false,
+     "p": 0.6666666666666666,
+     "r": 1,
+     "prompt_tokens": 7549
+    },
+    "gemma3:4b": {
+     "answer": [
+      "adapters",
+      "agenticsystemcore-engine",
+      "boundary",
+      "composition",
+      "distribution",
+      "governance",
+      "interchange",
+      "knowledge",
+      "ports",
+      "shared-kernel"
+     ],
+     "raw": "agenticsystemcore-engine\nadapters\nknowledge\ngovernance\ncomposition\nboundary\ninterchange\ndistribution\nshared-kernel\nports\n",
+     "correct": false,
+     "p": 0.6,
+     "r": 1,
+     "prompt_tokens": 8459
+    }
+   }
+  },
+  {
+   "id": "t22",
+   "type": "two-step",
+   "bundle": "tool-server",
+   "q": "Which items are required by the items that \"Call a tool\" requires (the second step of the \"requires\" links)?",
+   "gold": [
+    "knowledge-bundle",
+    "tool-server"
+   ],
+   "G1": {
+    "answer": [
+     "knowledge-bundle",
+     "tool-server"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "knowledge-bundle",
+     "tool-server"
+    ],
+    "correct": true,
+    "tool_calls": 3,
+    "bytes_read": 2201,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-client",
+      "tool-server"
+     ],
+     "raw": "tool-client\ntool-server",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.5,
+     "prompt_tokens": 1280,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "tool-client",
+      "tool-server"
+     ],
+     "raw": "tool-client\ntool-server\n",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.5,
+     "prompt_tokens": 1450,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-client",
+      "tool-server"
+     ],
+     "raw": "tool-client\ntool-server",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.5,
+     "prompt_tokens": 1280,
+     "files_with_gold_or_subject": 1
+    },
+    "gemma3:4b": {
+     "answer": [
+      "tool-client",
+      "tool-server"
+     ],
+     "raw": "tool-client\ntool-server\n",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.5,
+     "prompt_tokens": 1450,
+     "files_with_gold_or_subject": 1
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "tool-client",
+      "tool-server"
+     ],
+     "raw": "tool-client\ntool-server",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.5,
+     "prompt_tokens": 5320
+    },
+    "gemma3:4b": {
+     "answer": [
+      "page-tools",
+      "tool-client",
+      "tool-server"
+     ],
+     "raw": "tool-client\ntool-server\npage-tools\n",
+     "correct": false,
+     "p": 0.3333333333333333,
+     "r": 0.5,
+     "prompt_tokens": 6005
+    }
+   }
+  },
+  {
+   "id": "t23",
+   "type": "closure-3",
+   "bundle": "engine",
+   "q": "List everything \"Compose a Harness\" requires, directly or through other required items, up to three steps.",
+   "gold": [
+    "composition",
+    "knowledge",
+    "ports",
+    "shared-kernel"
+   ],
+   "G1": {
+    "answer": [
+     "composition",
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "composition",
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "tool_calls": 4,
+    "bytes_read": 3064,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "composition",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "composition\nknowledge\nports",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 1258,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "composition",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "composition\nknowledge\nports\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 1409,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "composition",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "composition\nknowledge\nports",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 1258,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "composition",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "composition\nknowledge\nports\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 1409,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "composition"
+     ],
+     "raw": "composition\nagsc\nagsc compose",
+     "correct": false,
+     "p": 1,
+     "r": 0.25,
+     "prompt_tokens": 7546
+    },
+    "gemma3:4b": {
+     "answer": [
+      "composition",
+      "knowledge"
+     ],
+     "raw": "Composition\nKnowledge\n--- file compose-a-harness.md",
+     "correct": false,
+     "p": 1,
+     "r": 0.5,
+     "prompt_tokens": 8456
+    }
+   }
+  },
+  {
+   "id": "t24",
+   "type": "closure-3",
+   "bundle": "tool-server",
+   "q": "List everything \"Compare the page and the server\" requires, directly or through other required items, up to three steps.",
+   "gold": [
+    "knowledge-bundle",
+    "page-tools",
+    "tool-server"
+   ],
+   "G1": {
+    "answer": [
+     "knowledge-bundle",
+     "page-tools",
+     "tool-server"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "knowledge-bundle",
+     "page-tools",
+     "tool-server"
+    ],
+    "correct": true,
+    "tool_calls": 4,
+    "bytes_read": 2969,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "page-tools",
+      "tool-server"
+     ],
+     "raw": "page-tools\ntool-server\ncompare-page-and-server",
+     "correct": false,
+     "p": 1,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1284,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge-bundle",
+      "page-tools"
+     ],
+     "raw": "compare-page-and-server.md\npage-tools.md\nknowledge-bundle.md",
+     "correct": false,
+     "p": 1,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1475,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "page-tools",
+      "tool-server"
+     ],
+     "raw": "page-tools\ntool-server\nmcp-call.js\npage-tools.js www",
+     "correct": false,
+     "p": 1,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 1284,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge-bundle",
+      "page-tools",
+      "tool-server",
+      "tool-server-and-client"
+     ],
+     "raw": "page-tools\ntool-server\nknowledge-bundle\ntool-server-and-client\n",
+     "correct": false,
+     "p": 0.75,
+     "r": 1,
+     "prompt_tokens": 1475,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "page-tools",
+      "tool-server"
+     ],
+     "raw": "page-tools\ntool-server\nmcp-call.js\npage-tools.js\nwww",
+     "correct": false,
+     "p": 1,
+     "r": 0.6666666666666666,
+     "prompt_tokens": 5319
+    },
+    "gemma3:4b": {
+     "answer": [
+      "knowledge-bundle",
+      "page-tools",
+      "tool-server"
+     ],
+     "raw": "knowledge-bundle\ntool-server\npage-tools\ntool-server\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 6004
+    }
+   }
+  },
+  {
+   "id": "t25",
+   "type": "closure-3",
+   "bundle": "engine",
+   "q": "List everything \"Interchange\" requires, directly or through other required items, up to three steps.",
+   "gold": [
+    "governance",
+    "knowledge",
+    "ports",
+    "shared-kernel"
+   ],
+   "G1": {
+    "answer": [
+     "governance",
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "governance",
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "tool_calls": 5,
+    "bytes_read": 4344,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "knowledge\ngovernance\nports",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 1286,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "Interchange\nknowledge\nports\ngovernance",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 1430,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "knowledge\ngovernance\nports",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 1286,
+     "files_with_gold_or_subject": 3
+    },
+    "gemma3:4b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "Interchange\nknowledge\ngovernance\nports\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 1430,
+     "files_with_gold_or_subject": 3
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "other-tools-formats",
+      "ports"
+     ],
+     "raw": "- knowledge\n- governance\n- ports\n- other-tools-formats",
+     "correct": false,
+     "p": 0.75,
+     "r": 0.75,
+     "prompt_tokens": 7545
+    },
+    "gemma3:4b": {
+     "answer": [
+      "governance",
+      "knowledge",
+      "ports"
+     ],
+     "raw": "knowledge\ngovernance\nports\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.75,
+     "prompt_tokens": 8455
+    }
+   }
+  },
+  {
+   "id": "t26",
+   "type": "closure-3",
+   "bundle": "engine",
+   "q": "List everything \"Check a discovery document\" requires, directly or through other required items, up to three steps.",
+   "gold": [
+    "boundary",
+    "composition",
+    "distribution",
+    "governance",
+    "knowledge",
+    "ports",
+    "shared-kernel"
+   ],
+   "G1": {
+    "answer": [
+     "boundary",
+     "composition",
+     "distribution",
+     "governance",
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "boundary",
+     "composition",
+     "distribution",
+     "governance",
+     "knowledge",
+     "ports",
+     "shared-kernel"
+    ],
+    "correct": true,
+    "tool_calls": 7,
+    "bytes_read": 6009,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "distribution",
+      "governance",
+      "knowledge"
+     ],
+     "raw": "distribution\nknowledge\ngovernance",
+     "correct": false,
+     "p": 1,
+     "r": 0.42857142857142855,
+     "prompt_tokens": 1287,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "distribution",
+      "engine-parts"
+     ],
+     "raw": "Check a discovery document\ndistribution\nengine-parts\n",
+     "correct": false,
+     "p": 0.5,
+     "r": 0.14285714285714285,
+     "prompt_tokens": 1459,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "distribution",
+      "governance",
+      "knowledge"
+     ],
+     "raw": "distribution\nknowledge\ngovernance",
+     "correct": false,
+     "p": 1,
+     "r": 0.42857142857142855,
+     "prompt_tokens": 1287,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "distribution"
+     ],
+     "raw": "check-a-discovery-document\ndistribution\n---",
+     "correct": false,
+     "p": 1,
+     "r": 0.14285714285714285,
+     "prompt_tokens": 1459,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "distribution"
+     ],
+     "raw": "distribution\nagsc build\nvalidate-wellknown",
+     "correct": false,
+     "p": 1,
+     "r": 0.14285714285714285,
+     "prompt_tokens": 7547
+    },
+    "gemma3:4b": {
+     "answer": [],
+     "raw": "Check a discovery document\n",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 8457
+    }
+   }
+  },
+  {
+   "id": "t27",
+   "type": "verifies",
+   "bundle": "tool-server",
+   "q": "Which items verify \"Knowledge Bundle\"?",
+   "gold": [
+    "check-the-bundle"
+   ],
+   "G1": {
+    "answer": [
+     "check-the-bundle"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "check-the-bundle"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 597,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "check-the-bundle"
+     ],
+     "raw": "check-the-bundle",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1306,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "check-the-bundle"
+     ],
+     "raw": "Check the Bundle\nKnowledge Bundle\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1495,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "check-the-bundle"
+     ],
+     "raw": "check-the-bundle",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1306,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "check-the-bundle"
+     ],
+     "raw": "Check the Bundle\nKnowledge Bundle\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1495,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "check-the-bundle"
+     ],
+     "raw": "check-the-bundle",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 5302
+    },
+    "gemma3:4b": {
+     "answer": [
+      "check-the-bundle",
+      "compare-page-and-server",
+      "list-the-tools"
+     ],
+     "raw": "- knowledge-bundle\n- check-the-bundle\n- compare-page-and-server\n- list-the-tools",
+     "correct": false,
+     "p": 0.3333333333333333,
+     "r": 1,
+     "prompt_tokens": 5987
+    }
+   }
+  },
+  {
+   "id": "t28",
+   "type": "verifies",
+   "bundle": "engine",
+   "q": "Which items verify \"Knowledge\"?",
+   "gold": [
+    "run-the-conformance-vectors"
+   ],
+   "G1": {
+    "answer": [
+     "run-the-conformance-vectors"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "run-the-conformance-vectors"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 1200,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "run-the-conformance-vectors"
+     ],
+     "raw": "run-the-conformance-vectors",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1238,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "run-the-conformance-vectors"
+     ],
+     "raw": "run-the-conformance-vectors\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1392,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "run-the-conformance-vectors"
+     ],
+     "raw": "run-the-conformance-vectors",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1238,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "run-the-conformance-vectors",
+      "verify-the-ledger"
+     ],
+     "raw": "Run the conformance vectors\nVerify the ledger\n",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 1392,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "run-the-conformance-vectors"
+     ],
+     "raw": "run-the-conformance-vectors",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 7531
+    },
+    "gemma3:4b": {
+     "answer": [
+      "run-the-conformance-vectors"
+     ],
+     "raw": "check-the-conformance-vectors\nrun-the-conformance-vectors\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 8441
+    }
+   }
+  },
+  {
+   "id": "t29",
+   "type": "decided-by",
+   "bundle": "linked-sites",
+   "q": "Which item records the decision for \"Bundle a\" (typed link \"decided-by\")?",
+   "gold": [
+    "decision-cite-through-sources"
+   ],
+   "G1": {
+    "answer": [
+     "decision-cite-through-sources"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "decision-cite-through-sources"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 739,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "decision-cite-through-sources"
+     ],
+     "raw": "decision-cite-through-sources",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1407,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "decision-cite-through-sources"
+     ],
+     "raw": "decision-cite-through-sources\n",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1583,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "decision-cite-through-sources"
+     ],
+     "raw": "decision-cite-through-sources",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1407,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "cite-the-other-site",
+      "decision-cite-through-sources"
+     ],
+     "raw": "Bundle a\nCite the other site through sources\n",
+     "correct": false,
+     "p": 0.5,
+     "r": 1,
+     "prompt_tokens": 1583,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "decision-peers-name-each-other"
+     ],
+     "raw": "decision-peers-name-each-other",
+     "correct": false,
+     "p": 0,
+     "r": 0,
+     "prompt_tokens": 4192
+    },
+    "gemma3:4b": {
+     "answer": [
+      "decision-cite-through-sources"
+     ],
+     "raw": "decision-cite-through-sources",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 4688
+    }
+   }
+  },
+  {
+   "id": "t30",
+   "type": "decided-by",
+   "bundle": "tool-server",
+   "q": "Which item records the decision for \"Tool server\" (typed link \"decided-by\")?",
+   "gold": [
+    "decision-answers-are-untrusted-data",
+    "decision-official-mcp-packages",
+    "decision-tools-write-nothing"
+   ],
+   "G1": {
+    "answer": [
+     "decision-answers-are-untrusted-data",
+     "decision-official-mcp-packages",
+     "decision-tools-write-nothing"
+    ],
+    "correct": true,
+    "circular": true
+   },
+   "G2": {
+    "answer": [
+     "decision-answers-are-untrusted-data",
+     "decision-official-mcp-packages",
+     "decision-tools-write-nothing"
+    ],
+    "correct": true,
+    "tool_calls": 1,
+    "bytes_read": 1326,
+    "p": 1,
+    "r": 1
+   },
+   "B1": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "decision-answers-are-untrusted-data",
+      "decision-official-mcp-packages",
+      "decision-tools-write-nothing"
+     ],
+     "raw": "decision-official-mcp-packages\ndecision-answers-are-untrusted-data\ndecision-tools-write-nothing",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1305,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "decision-tools-write-nothing"
+     ],
+     "raw": "decision-tools-write-nothing\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.3333333333333333,
+     "prompt_tokens": 1470,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "B2": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "decision-answers-are-untrusted-data",
+      "decision-official-mcp-packages",
+      "decision-tools-write-nothing"
+     ],
+     "raw": "decision-official-mcp-packages\ndecision-answers-are-untrusted-data\ndecision-tools-write-nothing",
+     "correct": true,
+     "p": 1,
+     "r": 1,
+     "prompt_tokens": 1305,
+     "files_with_gold_or_subject": 2
+    },
+    "gemma3:4b": {
+     "answer": [
+      "decision-tools-write-nothing"
+     ],
+     "raw": "decision-tools-write-nothing\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.3333333333333333,
+     "prompt_tokens": 1470,
+     "files_with_gold_or_subject": 2
+    }
+   },
+   "W": {
+    "qwen2.5-coder:7b": {
+     "answer": [
+      "decision-official-mcp-packages"
+     ],
+     "raw": "decision-official-mcp-packages",
+     "correct": false,
+     "p": 1,
+     "r": 0.3333333333333333,
+     "prompt_tokens": 5314
+    },
+    "gemma3:4b": {
+     "answer": [
+      "decision-answers-are-untrusted-data"
+     ],
+     "raw": "decision-answers-are-untrusted-data\n",
+     "correct": false,
+     "p": 1,
+     "r": 0.3333333333333333,
+     "prompt_tokens": 6000
+    }
+   }
+  }
+ ]
+}

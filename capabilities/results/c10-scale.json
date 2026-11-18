@@ -1,0 +1,151 @@
+{
+ "generator": "bench/gen-bundle.js of the 1.1.0 engine (deterministic; output a pure function of the item count)",
+ "runs_per_size": 3,
+ "machine": "AMD Ryzen 7 5800H with Radeon Graphics, 16 threads, 31 GB",
+ "rows": [
+  {
+   "items": 50,
+   "generated": true,
+   "source_bytes": 180837,
+   "build_runs": [
+    {
+     "exit": 0,
+     "ms": 1687,
+     "peak_rss_mb": 134,
+     "wall": "0:01.68"
+    },
+    {
+     "exit": 0,
+     "ms": 2064,
+     "peak_rss_mb": 135,
+     "wall": "0:02.05"
+    },
+    {
+     "exit": 0,
+     "ms": 1863,
+     "peak_rss_mb": 136,
+     "wall": "0:01.85"
+    }
+   ],
+   "build_ms_median": 1863,
+   "peak_rss_mb_max": 136,
+   "build_ok": true,
+   "output_bytes": 6600189,
+   "output_files": 205,
+   "bm25_index_build_ms": 36,
+   "bm25_query_ms_median": 0.20806200000000002,
+   "mcp_cold_start_ms": 1986,
+   "mcp_first_hits": 51,
+   "mcp_search_ms_median": 2.0507489999999997,
+   "mcp_search_ms_p95": 4.119073
+  },
+  {
+   "items": 500,
+   "generated": true,
+   "source_bytes": 1798979,
+   "build_runs": [
+    {
+     "exit": 0,
+     "ms": 5609,
+     "peak_rss_mb": 304,
+     "wall": "0:05.60"
+    },
+    {
+     "exit": 0,
+     "ms": 6377,
+     "peak_rss_mb": 290,
+     "wall": "0:06.37"
+    },
+    {
+     "exit": 0,
+     "ms": 5526,
+     "peak_rss_mb": 293,
+     "wall": "0:05.51"
+    }
+   ],
+   "build_ms_median": 5609,
+   "peak_rss_mb_max": 304,
+   "build_ok": true,
+   "output_bytes": 22173427,
+   "output_files": 1559,
+   "bm25_index_build_ms": 197,
+   "bm25_query_ms_median": 0.8804865,
+   "mcp_cold_start_ms": 4547,
+   "mcp_first_hits": 100,
+   "mcp_search_ms_median": 2.7686599999999997,
+   "mcp_search_ms_p95": 4.450687
+  },
+  {
+   "items": 2000,
+   "generated": true,
+   "source_bytes": 7199739,
+   "build_runs": [
+    {
+     "exit": 0,
+     "ms": 18418,
+     "peak_rss_mb": 630,
+     "wall": "0:18.41"
+    },
+    {
+     "exit": 0,
+     "ms": 16529,
+     "peak_rss_mb": 613,
+     "wall": "0:16.52"
+    },
+    {
+     "exit": 0,
+     "ms": 16081,
+     "peak_rss_mb": 616,
+     "wall": "0:16.07"
+    }
+   ],
+   "build_ms_median": 16529,
+   "peak_rss_mb_max": 630,
+   "build_ok": true,
+   "output_bytes": 74121336,
+   "output_files": 6077,
+   "bm25_index_build_ms": 686,
+   "bm25_query_ms_median": 3.658484,
+   "mcp_cold_start_ms": 13923,
+   "mcp_first_hits": 100,
+   "mcp_search_ms_median": 5.8998895000000005,
+   "mcp_search_ms_p95": 8.430239
+  },
+  {
+   "items": 5000,
+   "generated": true,
+   "source_bytes": 18007239,
+   "build_runs": [
+    {
+     "exit": 0,
+     "ms": 45218,
+     "peak_rss_mb": 1055,
+     "wall": "0:45.20"
+    },
+    {
+     "exit": 0,
+     "ms": 43989,
+     "peak_rss_mb": 1049,
+     "wall": "0:43.98"
+    },
+    {
+     "exit": 0,
+     "ms": 42030,
+     "peak_rss_mb": 1056,
+     "wall": "0:42.02"
+    }
+   ],
+   "build_ms_median": 43989,
+   "peak_rss_mb_max": 1056,
+   "build_ok": true,
+   "output_bytes": 178154900,
+   "output_files": 15113,
+   "bm25_index_build_ms": 1681,
+   "bm25_query_ms_median": 8.4439475,
+   "mcp_cold_start_ms": 34780,
+   "mcp_first_hits": 100,
+   "mcp_search_ms_median": 8.955778500000001,
+   "mcp_search_ms_p95": 13.696532
+  }
+ ]
+}

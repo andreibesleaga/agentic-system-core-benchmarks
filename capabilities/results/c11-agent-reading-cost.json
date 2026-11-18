@@ -1,0 +1,456 @@
+{
+ "questions": 50,
+ "statistic": "median over answerable questions of the answering study",
+ "routes": {
+  "C0 crawl pages from the home page to the page": {
+   "ctx_bytes": 19652,
+   "ctx_tokens": 4487.5,
+   "n": 50
+  },
+  "C1 llms.txt plus the gold page": {
+   "ctx_bytes": 16067.5,
+   "ctx_tokens": 3626.5,
+   "n": 50
+  },
+  "C2 node tools: search plus read (capped as served)": {
+   "ctx_bytes": 7062,
+   "ctx_tokens": 1975.5,
+   "n": 50
+  },
+  "C3 BM25 top 5 passages, index already local": {
+   "ctx_bytes": 2209.5,
+   "ctx_tokens": 507.5,
+   "n": 50
+  },
+  "C4 whole corpus pasted": {
+   "ctx_bytes": 31034,
+   "ctx_tokens": 6667,
+   "n": 50,
+   "note": "cut to the context limit for the larger node"
+  },
+  "D discovery route from a bare domain (document + BM25 top 5 chunks of the published chunk file)": {
+   "ctx_bytes": 5103,
+   "ctx_tokens": 1586.5,
+   "transferred_bytes": 266558,
+   "gold_in_top5": 50,
+   "discovery_document_bytes_median": 2840,
+   "n": 50
+  },
+  "floor: the gold page only": {
+   "ctx_bytes": 3661.5,
+   "ctx_tokens": 874.5,
+   "n": 50
+  },
+  "floor: the gold chunk only": {
+   "ctx_bytes": 444,
+   "ctx_tokens": 99,
+   "n": 50
+  }
+ },
+ "route_D_rows": [
+  {
+   "id": "q01",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4904,
+   "in_context_tokens": 1544,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q02",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5341,
+   "in_context_tokens": 1652,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q03",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4569,
+   "in_context_tokens": 1474,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q04",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4158,
+   "in_context_tokens": 1372,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q05",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5479,
+   "in_context_tokens": 1656,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q06",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4318,
+   "in_context_tokens": 1417,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q07",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4139,
+   "in_context_tokens": 1353,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q08",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4555,
+   "in_context_tokens": 1469,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q09",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5738,
+   "in_context_tokens": 1711,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q10",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4694,
+   "in_context_tokens": 1486,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q11",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5555,
+   "in_context_tokens": 1652,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q12",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5159,
+   "in_context_tokens": 1586,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q13",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5719,
+   "in_context_tokens": 1752,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q14",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4222,
+   "in_context_tokens": 1398,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q15",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4890,
+   "in_context_tokens": 1549,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q16",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4961,
+   "in_context_tokens": 1536,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q17",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5234,
+   "in_context_tokens": 1630,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q18",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4939,
+   "in_context_tokens": 1535,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q19",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5518,
+   "in_context_tokens": 1696,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q20",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5689,
+   "in_context_tokens": 1704,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q21",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4599,
+   "in_context_tokens": 1486,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q22",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5068,
+   "in_context_tokens": 1587,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q23",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4595,
+   "in_context_tokens": 1520,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q24",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4053,
+   "in_context_tokens": 1348,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q25",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5353,
+   "in_context_tokens": 1627,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q26",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4479,
+   "in_context_tokens": 1441,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q27",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4633,
+   "in_context_tokens": 1468,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q28",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4271,
+   "in_context_tokens": 1379,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q29",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 7818,
+   "in_context_tokens": 2446,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q30",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 5813,
+   "in_context_tokens": 1954,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q31",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 6920,
+   "in_context_tokens": 2278,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q32",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 7157,
+   "in_context_tokens": 2280,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q33",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 4696,
+   "in_context_tokens": 1672,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q34",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 7486,
+   "in_context_tokens": 2359,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q35",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 5914,
+   "in_context_tokens": 1970,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q36",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 6705,
+   "in_context_tokens": 2164,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q37",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 7342,
+   "in_context_tokens": 2325,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q38",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 6182,
+   "in_context_tokens": 1995,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q39",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 7788,
+   "in_context_tokens": 2453,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q40",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 6442,
+   "in_context_tokens": 2152,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q41",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4388,
+   "in_context_tokens": 1434,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q42",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4175,
+   "in_context_tokens": 1398,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q43",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5000,
+   "in_context_tokens": 1574,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q44",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4714,
+   "in_context_tokens": 1454,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q45",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4855,
+   "in_context_tokens": 1539,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q46",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 4600,
+   "in_context_tokens": 1509,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q47",
+   "discovery_document_bytes": 2840,
+   "in_context_bytes": 5138,
+   "in_context_tokens": 1579,
+   "transferred_bytes": 266558,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q48",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 7841,
+   "in_context_tokens": 2474,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q49",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 6688,
+   "in_context_tokens": 2137,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  },
+  {
+   "id": "q50",
+   "discovery_document_bytes": 3732,
+   "in_context_bytes": 7571,
+   "in_context_tokens": 2377,
+   "transferred_bytes": 26457,
+   "gold_in_top5": true
+  }
+ ],
+ "first_study_recall": {
+  "C3_top5_recall_all_gold": 50,
+  "C2_search_recall_all_gold": 50
+ }
+}

@@ -1,0 +1,258 @@
+{
+ "source_rows_copied": {
+  "runs-anthropic_claude_haiku_5.5.jsonl": 968,
+  "runs-anthropic_claude_sonnet_5.5.jsonl": 236,
+  "runs-gemma3_4b.jsonl": 540,
+  "runs-qwen2.5_coder_7b.jsonl": 1260
+ },
+ "note": "Rows of runs-anthropic_* are incomplete: the hosted-model runs stopped at their token caps. Counts are of the rows present.",
+ "levels": {
+  "L1": "names the item",
+  "L2": "locator a program resolves to one passage (published chunk id or digest, or the answering study’s own slug#n)",
+  "L3": "published digest of a passage that holds every fact of the question, and the item is named"
+ },
+ "rows": [
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "condition": "C0",
+   "correct_answers": 84,
+   "L1": 72,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 85.7,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "condition": "C1",
+   "correct_answers": 90,
+   "L1": 83,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 92.2,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "condition": "C2",
+   "correct_answers": 115,
+   "L1": 113,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 98.3,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "condition": "C2b",
+   "correct_answers": 108,
+   "L1": 106,
+   "L2": 106,
+   "L3": 95,
+   "L1_pct": 98.1,
+   "L2_pct": 98.1,
+   "L3_pct": 88
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "condition": "C2u",
+   "correct_answers": 115,
+   "L1": 111,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 96.5,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "condition": "C3",
+   "correct_answers": 114,
+   "L1": 111,
+   "L2": 18,
+   "L3": 0,
+   "L1_pct": 97.4,
+   "L2_pct": 15.8,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-haiku-5.5",
+   "condition": "C4",
+   "correct_answers": 116,
+   "L1": 114,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 98.3,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-sonnet-5.5",
+   "condition": "C0",
+   "correct_answers": 33,
+   "L1": 31,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 93.9,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-sonnet-5.5",
+   "condition": "C1",
+   "correct_answers": 33,
+   "L1": 33,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 100,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-sonnet-5.5",
+   "condition": "C2",
+   "correct_answers": 38,
+   "L1": 38,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 100,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-sonnet-5.5",
+   "condition": "C2b",
+   "correct_answers": 39,
+   "L1": 39,
+   "L2": 39,
+   "L3": 39,
+   "L1_pct": 100,
+   "L2_pct": 100,
+   "L3_pct": 100
+  },
+  {
+   "model": "anthropic/claude-sonnet-5.5",
+   "condition": "C3",
+   "correct_answers": 39,
+   "L1": 38,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 97.4,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "anthropic/claude-sonnet-5.5",
+   "condition": "C4",
+   "correct_answers": 39,
+   "L1": 39,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 100,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "gemma3:4b",
+   "condition": "C2b",
+   "correct_answers": 125,
+   "L1": 40,
+   "L2": 93,
+   "L3": 22,
+   "L1_pct": 32,
+   "L2_pct": 74.4,
+   "L3_pct": 17.6
+  },
+  {
+   "model": "gemma3:4b",
+   "condition": "C3",
+   "correct_answers": 138,
+   "L1": 62,
+   "L2": 121,
+   "L3": 0,
+   "L1_pct": 44.9,
+   "L2_pct": 87.7,
+   "L3_pct": 0
+  },
+  {
+   "model": "gemma3:4b",
+   "condition": "C4",
+   "correct_answers": 108,
+   "L1": 17,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 15.7,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "qwen2.5-coder:7b",
+   "condition": "C1",
+   "correct_answers": 1,
+   "L1": 1,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 100,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "qwen2.5-coder:7b",
+   "condition": "C2",
+   "correct_answers": 1,
+   "L1": 1,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 100,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "qwen2.5-coder:7b",
+   "condition": "C2b",
+   "correct_answers": 126,
+   "L1": 82,
+   "L2": 114,
+   "L3": 64,
+   "L1_pct": 65.1,
+   "L2_pct": 90.5,
+   "L3_pct": 50.8
+  },
+  {
+   "model": "qwen2.5-coder:7b",
+   "condition": "C2u",
+   "correct_answers": 13,
+   "L1": 11,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 84.6,
+   "L2_pct": 0,
+   "L3_pct": 0
+  },
+  {
+   "model": "qwen2.5-coder:7b",
+   "condition": "C3",
+   "correct_answers": 141,
+   "L1": 100,
+   "L2": 105,
+   "L3": 0,
+   "L1_pct": 70.9,
+   "L2_pct": 74.5,
+   "L3_pct": 0
+  },
+  {
+   "model": "qwen2.5-coder:7b",
+   "condition": "C4",
+   "correct_answers": 109,
+   "L1": 39,
+   "L2": 0,
+   "L3": 0,
+   "L1_pct": 35.8,
+   "L2_pct": 0,
+   "L3_pct": 0
+  }
+ ]
+}

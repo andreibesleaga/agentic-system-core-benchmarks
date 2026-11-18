@@ -1,0 +1,517 @@
+{
+ "build": {
+  "exit": 0,
+  "ms": 2435,
+  "total_files": 323,
+  "total_bytes": 7437989,
+  "by_kind": {
+   "discovery document (linkset)": {
+    "files": 1,
+    "bytes": 2840
+   },
+   "other .well-known files": {
+    "files": 2,
+    "bytes": 354
+   },
+   "HTML pages": {
+    "files": 125,
+    "bytes": 987505
+   },
+   "crawler and host files (robots, sitemap, headers, redirects)": {
+    "files": 4,
+    "bytes": 21515
+   },
+   "page scripts, styles, assets (client-side tools included)": {
+    "files": 7,
+    "bytes": 123237
+   },
+   "chunks for retrieval (JSONL, TOON)": {
+    "files": 2,
+    "bytes": 292388
+   },
+   "in-browser tools (page tool scripts incl. WebMCP, graph explorer)": {
+    "files": 6,
+    "bytes": 219235
+   },
+   "knowledge graph (JSON-LD, Turtle, N-Quads, context)": {
+    "files": 5,
+    "bytes": 829522
+   },
+   "ledger": {
+    "files": 1,
+    "bytes": 6936
+   },
+   "text for language models (llms.txt, llms-full.txt, now.md)": {
+    "files": 3,
+    "bytes": 85123
+   },
+   "JSON-LD description of each item": {
+    "files": 70,
+    "bytes": 153214
+   },
+   "Markdown copy of each item": {
+    "files": 70,
+    "bytes": 145310
+   },
+   "other": {
+    "files": 4,
+    "bytes": 4420191
+   },
+   "search index": {
+    "files": 1,
+    "bytes": 58119
+   },
+   "skill packs (Agent Skills)": {
+    "files": 22,
+    "bytes": 92500
+   }
+  },
+  "items_published": [
+   "clusters=20",
+   "concepts=50",
+   "episodes=0",
+   "gates=0",
+   "lessons=0",
+   "procedures=0"
+  ]
+ },
+ "commands": [
+  {
+   "command": "agsc export --steer",
+   "label": "export --steer (default targets)",
+   "exit": 0,
+   "ms": 1261,
+   "files": 2,
+   "bytes": 24564,
+   "by_extension": {
+    ".md": 2
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/steer/AGENTS.md",
+    "dist/export/steer/CLAUDE.md"
+   ]
+  },
+  {
+   "command": "agsc export --steer --target agents,aider,claude,cline,codex,copilot,cursor,gabbe,gemini,kiro,windsurf",
+   "label": "export --steer --target all 11",
+   "exit": 0,
+   "ms": 1228,
+   "files": 11,
+   "bytes": 135102,
+   "by_extension": {
+    ".md": 10,
+    ".mdc": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/steer/.clinerules/agsc.md",
+    "dist/export/steer/.cursor/rules/agsc.mdc",
+    "dist/export/steer/.github/copilot-instructions.md",
+    "dist/export/steer/.kiro/steering/agsc.md"
+   ]
+  },
+  {
+   "command": "agsc export --markdown",
+   "label": "export --markdown",
+   "exit": 0,
+   "ms": 1624,
+   "files": 72,
+   "bytes": 157616,
+   "by_extension": {
+    "(none)": 1,
+    ".md": 71
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/markdown/LICENSE-CONTENT",
+    "dist/export/markdown/content/clusters/advanced.md",
+    "dist/export/markdown/content/clusters/antipatterns.md",
+    "dist/export/markdown/content/clusters/classical.md"
+   ]
+  },
+  {
+   "command": "agsc export --okf",
+   "label": "export --okf",
+   "exit": 0,
+   "ms": 1663,
+   "files": 73,
+   "bytes": 159949,
+   "by_extension": {
+    "(none)": 1,
+    ".md": 72
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/okf/LICENSE-CONTENT",
+    "dist/export/okf/content/clusters/advanced.md",
+    "dist/export/okf/content/clusters/antipatterns.md",
+    "dist/export/okf/content/clusters/classical.md"
+   ]
+  },
+  {
+   "command": "agsc export --jsonld",
+   "label": "export --jsonld",
+   "exit": 0,
+   "ms": 2193,
+   "files": 1,
+   "bytes": 134524,
+   "by_extension": {
+    ".jsonld": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/graph.jsonld"
+   ]
+  },
+  {
+   "command": "agsc export --jsonl",
+   "label": "export --jsonl",
+   "exit": 0,
+   "ms": 2192,
+   "files": 1,
+   "bytes": 153214,
+   "by_extension": {
+    ".jsonl": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/items.jsonl"
+   ]
+  },
+  {
+   "command": "agsc export --skos",
+   "label": "export --skos",
+   "exit": 0,
+   "ms": 2369,
+   "files": 1,
+   "bytes": 53731,
+   "by_extension": {
+    ".ttl": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/skos.ttl"
+   ]
+  },
+  {
+   "command": "agsc export --closure",
+   "label": "export --closure",
+   "exit": 0,
+   "ms": 2413,
+   "files": 1,
+   "bytes": 36695,
+   "by_extension": {
+    ".nt": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/closure.nt"
+   ]
+  },
+  {
+   "command": "agsc export --to cogx",
+   "label": "export --to cogx",
+   "exit": 0,
+   "ms": 1319,
+   "files": 5,
+   "bytes": 600026,
+   "by_extension": {
+    ".jsonl": 4,
+    ".json": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/cogx/documents.jsonl",
+    "dist/export/cogx/entities.jsonl",
+    "dist/export/cogx/facts.jsonl",
+    "dist/export/cogx/manifest.json"
+   ]
+  },
+  {
+   "command": "agsc export --to gabbe",
+   "label": "export --to gabbe",
+   "exit": 0,
+   "ms": 1372,
+   "files": 71,
+   "bytes": 321008,
+   "by_extension": {
+    ".md": 71
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/gabbe/agents/guides/agsc/steering.md",
+    "dist/export/gabbe/agents/memory/semantic/agsc/advanced.md",
+    "dist/export/gabbe/agents/memory/semantic/agsc/agent-graph-optimization.md",
+    "dist/export/gabbe/agents/memory/semantic/agsc/agent-identity-scoped-credentials.md"
+   ]
+  },
+  {
+   "command": "agsc export --to mermaid",
+   "label": "export --to mermaid",
+   "exit": 0,
+   "ms": 1212,
+   "files": 90,
+   "bytes": 75386,
+   "by_extension": {
+    ".mmd": 90
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/mermaid/clusters/advanced.mmd",
+    "dist/export/mermaid/clusters/antipatterns.mmd",
+    "dist/export/mermaid/clusters/classical.mmd",
+    "dist/export/mermaid/clusters/cognitive-behavioral.mmd"
+   ]
+  },
+  {
+   "command": "agsc export --to mem0",
+   "label": "export --to mem0",
+   "exit": 0,
+   "ms": 1180,
+   "files": 1,
+   "bytes": 324069,
+   "by_extension": {
+    ".json": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/mem0/memories.json"
+   ]
+  },
+  {
+   "command": "agsc export --to letta",
+   "label": "export --to letta",
+   "exit": 0,
+   "ms": 1270,
+   "files": 1,
+   "bytes": 309894,
+   "by_extension": {
+    ".json": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/letta/passages.json"
+   ]
+  },
+  {
+   "command": "agsc export --to zep",
+   "label": "export --to zep",
+   "exit": 0,
+   "ms": 1296,
+   "files": 1,
+   "bytes": 313182,
+   "by_extension": {
+    ".json": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/zep/episodes.json"
+   ]
+  },
+  {
+   "command": "agsc export --to csv",
+   "label": "export --to csv",
+   "exit": 0,
+   "ms": 1262,
+   "files": 2,
+   "bytes": 266101,
+   "by_extension": {
+    ".md": 1,
+    ".csv": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/csv/PROVENANCE.md",
+    "dist/export/csv/items.csv"
+   ]
+  },
+  {
+   "command": "agsc export --to basic-memory",
+   "label": "export --to basic-memory",
+   "exit": 0,
+   "ms": 1274,
+   "files": 70,
+   "bytes": 341539,
+   "by_extension": {
+    ".md": 70
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/basic-memory/clusters/advanced.md",
+    "dist/export/basic-memory/clusters/antipatterns.md",
+    "dist/export/basic-memory/clusters/classical.md",
+    "dist/export/basic-memory/clusters/cognitive-behavioral.md"
+   ]
+  },
+  {
+   "command": "agsc export --to claude-code",
+   "label": "export --to claude-code",
+   "exit": 0,
+   "ms": 1264,
+   "files": 71,
+   "bytes": 351112,
+   "by_extension": {
+    ".md": 71
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/claude-code/memory/MEMORY.md",
+    "dist/export/claude-code/memory/advanced.md",
+    "dist/export/claude-code/memory/agent-graph-optimization.md",
+    "dist/export/claude-code/memory/agent-identity-scoped-credentials.md"
+   ]
+  },
+  {
+   "command": "agsc export --to skills",
+   "label": "export --to skills",
+   "exit": 0,
+   "ms": 1421,
+   "files": 20,
+   "bytes": 305798,
+   "by_extension": {
+    ".md": 20
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/skills/agentskills/skills/advanced/SKILL.md",
+    "dist/export/skills/agentskills/skills/antipatterns/SKILL.md",
+    "dist/export/skills/agentskills/skills/classical/SKILL.md",
+    "dist/export/skills/agentskills/skills/cognitive-behavioral/SKILL.md"
+   ]
+  },
+  {
+   "command": "agsc export --to llm-context",
+   "label": "export --to llm-context",
+   "exit": 0,
+   "ms": 1291,
+   "files": 2,
+   "bytes": 127093,
+   "by_extension": {
+    ".toon": 1,
+    ".txt": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/export/llm-context/chunks-index.toon",
+    "dist/export/llm-context/llms-ctx.txt"
+   ]
+  },
+  {
+   "command": "agsc export --to board",
+   "label": "export --to board",
+   "exit": 2,
+   "ms": 1230,
+   "files": 0,
+   "bytes": 0,
+   "by_extension": {},
+   "first_message": "export: fail (1 error, 0 warn)",
+   "sample": []
+  },
+  {
+   "command": "agsc skills",
+   "label": "skills (emit every pack)",
+   "exit": 0,
+   "ms": 1330,
+   "files": 21,
+   "bytes": 87022,
+   "by_extension": {
+    ".md": 20,
+    ".json": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/skills/advanced/SKILL.md",
+    "dist/skills/antipatterns/SKILL.md",
+    "dist/skills/classical/SKILL.md",
+    "dist/skills/cognitive-behavioral/SKILL.md"
+   ]
+  },
+  {
+   "command": "agsc skills --zip",
+   "label": "skills --zip",
+   "exit": 0,
+   "ms": 1352,
+   "files": 22,
+   "bytes": 176516,
+   "by_extension": {
+    ".md": 20,
+    ".json": 1,
+    ".zip": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/skills/advanced/SKILL.md",
+    "dist/skills/antipatterns/SKILL.md",
+    "dist/skills/classical/SKILL.md",
+    "dist/skills/cognitive-behavioral/SKILL.md"
+   ]
+  },
+  {
+   "command": "agsc compose augmented-llm agents-as-tools --zip",
+   "label": "compose augmented-llm agents-as-tools --zip",
+   "exit": 0,
+   "ms": 1280,
+   "files": 9,
+   "bytes": 20378,
+   "by_extension": {
+    ".md": 4,
+    ".mmd": 1,
+    ".jsonld": 1,
+    ".dsl": 1,
+    ".zip": 1,
+    ".json": 1
+   },
+   "first_message": "",
+   "sample": [
+    "dist/harness/12ff8bf8e306d7b5/AGENTS.md",
+    "dist/harness/12ff8bf8e306d7b5/arc42.md",
+    "dist/harness/12ff8bf8e306d7b5/decisions/0001-augmented-llm.md",
+    "dist/harness/12ff8bf8e306d7b5/decisions/0002-agents-as-tools.md"
+   ]
+  },
+  {
+   "command": "agsc compose augmented-llm agents-as-tools --brief",
+   "label": "compose ... --brief",
+   "exit": 0,
+   "ms": 1313,
+   "files": 12,
+   "bytes": 19677,
+   "by_extension": {
+    ".md": 6,
+    ".mmd": 2,
+    ".jsonld": 1,
+    ".dsl": 1,
+    ".json": 2
+   },
+   "first_message": "",
+   "sample": [
+    "dist/harness/12ff8bf8e306d7b5/AGENTS.md",
+    "dist/harness/12ff8bf8e306d7b5/arc42.md",
+    "dist/harness/12ff8bf8e306d7b5/decisions/0001-augmented-llm.md",
+    "dist/harness/12ff8bf8e306d7b5/decisions/0002-agents-as-tools.md"
+   ]
+  }
+ ],
+ "steer_targets": {
+  "files": [
+   ".clinerules/agsc.md",
+   ".cursor/rules/agsc.mdc",
+   ".github/copilot-instructions.md",
+   ".kiro/steering/agsc.md",
+   ".windsurf/rules/agsc.md",
+   "AGENTS.md",
+   "AGENTS.override.md",
+   "CLAUDE.md",
+   "CONVENTIONS.md",
+   "GABBE/agents/AGENTS.md",
+   "GEMINI.md"
+  ],
+  "distinct_contents": 1,
+  "bytes_each": 12282
+ },
+ "mcp": {
+  "tools": 10,
+  "note": "counted in case 8 and case 10 from the server tool list"
+ }
+}

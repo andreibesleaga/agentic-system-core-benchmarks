@@ -1,0 +1,2026 @@
+{
+ "seed": 20261118,
+ "baseline_clean_site_passes": {
+  "node": true,
+  "python": true
+ },
+ "newer_build_exit": 0,
+ "files_in_site": 324,
+ "files_named_in_discovery_document": 9,
+ "by_class_file_count": {
+  "B pages (html)": 126,
+  "D other site files": 42,
+  "A named in discovery document": 9,
+  "C per-item copies (md, jsonld)": 140
+ },
+ "totals": {
+  "n": 268,
+  "node_detected": 33,
+  "python_detected": 33
+ },
+ "by_class": {
+  "B pages (html)": {
+   "n": 80,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "D other site files": {
+   "n": 75,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "A named in discovery document": {
+   "n": 33,
+   "node_detected": 33,
+   "python_detected": 33
+  },
+  "C per-item copies (md, jsonld)": {
+   "n": 80,
+   "node_detected": 0,
+   "python_detected": 0
+  }
+ },
+ "by_kind_and_class": {
+  "one byte | B pages (html)": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "one sentence | B pages (html)": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "truncated | B pages (html)": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "swapped with another file | B pages (html)": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "one byte | D other site files": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "one sentence | D other site files": {
+   "n": 17,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "truncated | D other site files": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "swapped with another file | D other site files": {
+   "n": 18,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "one byte | A named in discovery document": {
+   "n": 9,
+   "node_detected": 9,
+   "python_detected": 9
+  },
+  "one sentence | A named in discovery document": {
+   "n": 6,
+   "node_detected": 6,
+   "python_detected": 6
+  },
+  "truncated | A named in discovery document": {
+   "n": 9,
+   "node_detected": 9,
+   "python_detected": 9
+  },
+  "swapped with another file | A named in discovery document": {
+   "n": 4,
+   "node_detected": 4,
+   "python_detected": 4
+  },
+  "one byte | C per-item copies (md, jsonld)": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "one sentence | C per-item copies (md, jsonld)": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "truncated | C per-item copies (md, jsonld)": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "swapped with another file | C per-item copies (md, jsonld)": {
+   "n": 20,
+   "node_detected": 0,
+   "python_detected": 0
+  },
+  "stale file (from another version) | A named in discovery document": {
+   "n": 5,
+   "node_detected": 5,
+   "python_detected": 5
+  }
+ },
+ "plain_pages_llms_txt_rag_index": {
+  "detectors_available": 0,
+  "detected": 0,
+  "n": 268,
+  "reason": "no digest or other integrity data is published with them; a client with no earlier trusted copy has nothing to compare with"
+ },
+ "markdown_folder_with_known_good_hashes": {
+  "n": 60,
+  "detected": 60,
+  "method": "git hash-object against hashes taken before the damage; needs the client to hold a trusted commit"
+ },
+ "whole_older_site_consistent_with_its_own_document": {
+  "digests_only_node": false,
+  "digests_only_python": false,
+  "anchor_check_detects_old_site": true,
+  "anchor_check_accepts_the_anchored_site": true
+ },
+ "stale_files_tested": 5,
+ "rows": [
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "clusters/antipatterns/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "clusters/antipatterns/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "clusters/antipatterns/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/blackboard/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/blackboard/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/blackboard/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/agentic-supply-chain/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/agentic-supply-chain/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/agentic-supply-chain/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "compose/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "compose/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "compose/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/multi-agent-debate/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/multi-agent-debate/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/multi-agent-debate/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "tags/isolation/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "tags/isolation/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "tags/isolation/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "tags/coding-agents/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "tags/coding-agents/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "tags/coding-agents/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/human-only-merge-gate/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/human-only-merge-gate/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/human-only-merge-gate/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/judge-calibration/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/judge-calibration/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/judge-calibration/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "gates/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "gates/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "gates/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "clusters/ethics/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "clusters/ethics/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "clusters/ethics/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/immutable-audit-log/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/immutable-audit-log/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/immutable-audit-log/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/parallelization/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/parallelization/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/parallelization/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/resolution-rate-metrics/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/resolution-rate-metrics/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/resolution-rate-metrics/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/idempotent-agent-actions/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/idempotent-agent-actions/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/idempotent-agent-actions/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/bulkhead-isolation/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/bulkhead-isolation/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/bulkhead-isolation/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "tags/evaluation/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "tags/evaluation/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "tags/evaluation/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/memory-context-poisoning/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/memory-context-poisoning/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/memory-context-poisoning/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "B pages (html)",
+   "file": "concepts/canary-and-shadow-prompts/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "B pages (html)",
+   "file": "concepts/canary-and-shadow-prompts/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "B pages (html)",
+   "file": "concepts/canary-and-shadow-prompts/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "concepts/evolutionary-prompt-search/index.html <-> query/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "concepts/sustainability-signal-plane/index.html <-> legal/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "concepts/owasp-agentic-top-10/index.html <-> clusters/foundational/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "clusters/operations-reliability/index.html <-> clusters/topologies/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "concepts/meaningful-human-control/index.html <-> concepts/pass-hat-k/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "clusters/cognitive-behavioral/index.html <-> tags/multi-agent/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "tags/loop/index.html <-> tags/metrics/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "concepts/blackboard/index.html <-> concepts/deep-research-loop/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "tags/observability/index.html <-> concepts/saga-for-agents/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "concepts/parallelization/index.html <-> tags/standards/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "concepts/multi-agent-debate/index.html <-> clusters/reference-architectures/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "clusters/antipatterns/index.html <-> concepts/specification-gaming/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "concepts/deep-research-loop/index.html <-> clusters/future/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "concepts/judge-calibration/index.html <-> tags/fault-tolerance/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "tags/isolation/index.html <-> tags/persistence/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "tags/blueprint/index.html <-> tags/determinism/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "clusters/specs/index.html <-> legal/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "404.html <-> compose/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "tags/planning/index.html <-> concepts/termination-conditions/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "B pages (html)",
+   "file": "tags/coding-agents/index.html <-> concepts/golden-trajectory-snapshots/index.html",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "search/agsc-search.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "search/agsc-search.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "search/agsc-search.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "search.json",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "search.json",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "search.json",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "skills/foundational/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "skills/foundational/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "skills/foundational/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "robots.txt",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "robots.txt",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "robots.txt",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "skills/topologies/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "skills/topologies/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "skills/topologies/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "clusters/agsc-explorer.css",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "clusters/agsc-explorer.css",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "clusters/agsc-explorer.css",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "skills/memory-cognition/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "skills/memory-cognition/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "skills/memory-cognition/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "skills/governance/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "skills/governance/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "skills/governance/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "skills/evaluation-testing/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "skills/evaluation-testing/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "skills/evaluation-testing/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "skills/reasoning-decision/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "skills/reasoning-decision/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "skills/reasoning-decision/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "query/agsc-query.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "query/agsc-query.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "query/agsc-query.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "compose/agsc-core.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "compose/agsc-core.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "compose/agsc-core.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "skills/cognitive-behavioral/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "skills/cognitive-behavioral/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "skills/cognitive-behavioral/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "skills/ethics/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "skills/ethics/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "skills/ethics/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "sitemap.xml",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "sitemap.xml",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "chunks-index.toon",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "chunks-index.toon",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "skills/advanced/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "skills/advanced/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "skills/advanced/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "query/vendor/oxigraph-0.5.13/LICENSE-APACHE.txt",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "query/vendor/oxigraph-0.5.13/LICENSE-APACHE.txt",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "query/vendor/oxigraph-0.5.13/LICENSE-APACHE.txt",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "compose/webmcp.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "D other site files",
+   "file": "compose/webmcp.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "compose/webmcp.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "D other site files",
+   "file": "ns/1.0.0/context.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "D other site files",
+   "file": "ns/1.0.0/context.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/classical/SKILL.md <-> skills/foundational/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "compose/agsc-compose.js <-> query/vendor/oxigraph-0.5.13/web.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/reference-architectures/SKILL.md <-> skills/foundational/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/data-retrieval/SKILL.md <-> skills/operations-reliability/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "query/vendor/oxigraph-0.5.13/THIRD-PARTY.txt <-> query/vendor/oxigraph-0.5.13/LICENSE-APACHE.txt",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/cognitive-behavioral/SKILL.md <-> skills/sdlc/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/product/SKILL.md <-> skills/cognitive-behavioral/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/reasoning-decision/SKILL.md <-> skills/ethics/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/advanced/SKILL.md <-> skills/foundational/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/governance/SKILL.md <-> skills/sdlc/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/memory-cognition/SKILL.md <-> skills/protocols/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "query/vendor/oxigraph-0.5.13/LICENSE-APACHE.txt <-> llms-full.txt",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "clusters/agsc-explorer.js <-> compose/agsc-core.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/specs/SKILL.md <-> skills/governance/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/operations-reliability/SKILL.md <-> skills/topologies/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "search/agsc-search.js <-> compose/agsc-compose.js",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "clusters/agsc-explorer.css <-> query/agsc-query.css",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "D other site files",
+   "file": "skills/protocols/SKILL.md <-> skills/advanced/SKILL.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "A named in discovery document",
+   "file": "chunks.jsonl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one sentence",
+   "class": "A named in discovery document",
+   "file": "chunks.jsonl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "truncated",
+   "class": "A named in discovery document",
+   "file": "chunks.jsonl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one byte",
+   "class": "A named in discovery document",
+   "file": "graph.jsonld",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one sentence",
+   "class": "A named in discovery document",
+   "file": "graph.jsonld",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "truncated",
+   "class": "A named in discovery document",
+   "file": "graph.jsonld",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one byte",
+   "class": "A named in discovery document",
+   "file": "graph.nq",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one sentence",
+   "class": "A named in discovery document",
+   "file": "graph.nq",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "truncated",
+   "class": "A named in discovery document",
+   "file": "graph.nq",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one byte",
+   "class": "A named in discovery document",
+   "file": "graph.ttl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one sentence",
+   "class": "A named in discovery document",
+   "file": "graph.ttl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "truncated",
+   "class": "A named in discovery document",
+   "file": "graph.ttl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one byte",
+   "class": "A named in discovery document",
+   "file": "ledger.jsonl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "truncated",
+   "class": "A named in discovery document",
+   "file": "ledger.jsonl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one byte",
+   "class": "A named in discovery document",
+   "file": "llms.txt",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one sentence",
+   "class": "A named in discovery document",
+   "file": "llms.txt",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "truncated",
+   "class": "A named in discovery document",
+   "file": "llms.txt",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one byte",
+   "class": "A named in discovery document",
+   "file": "now.md",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "truncated",
+   "class": "A named in discovery document",
+   "file": "now.md",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one byte",
+   "class": "A named in discovery document",
+   "file": "ns/context.jsonld",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "truncated",
+   "class": "A named in discovery document",
+   "file": "ns/context.jsonld",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one byte",
+   "class": "A named in discovery document",
+   "file": "skills/index.json",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one sentence",
+   "class": "A named in discovery document",
+   "file": "skills/index.json",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "truncated",
+   "class": "A named in discovery document",
+   "file": "skills/index.json",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "A named in discovery document",
+   "file": "chunks.jsonl <-> ledger.jsonl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "A named in discovery document",
+   "file": "graph.jsonld <-> ns/context.jsonld",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "A named in discovery document",
+   "file": "ledger.jsonl <-> chunks.jsonl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "A named in discovery document",
+   "file": "ns/context.jsonld <-> graph.jsonld",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/idempotent-agent-actions.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/idempotent-agent-actions.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/idempotent-agent-actions.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/immutable-audit-log.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/immutable-audit-log.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/immutable-audit-log.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/bulkhead-isolation.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/bulkhead-isolation.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/bulkhead-isolation.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/dual-llm-pattern.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/dual-llm-pattern.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/dual-llm-pattern.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/curiosity-driven-curriculum.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/curiosity-driven-curriculum.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/curiosity-driven-curriculum.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/graph-of-thoughts.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/graph-of-thoughts.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/graph-of-thoughts.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/safe-interruptibility.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/safe-interruptibility.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/safe-interruptibility.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/skill-library.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/skill-library.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/skill-library.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/agent-graph-optimization.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/agent-graph-optimization.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/agent-graph-optimization.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/retrieval-evaluation.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/retrieval-evaluation.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/retrieval-evaluation.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/shadow-mode-rollout.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/shadow-mode-rollout.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/shadow-mode-rollout.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/meaningful-human-control.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/meaningful-human-control.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/meaningful-human-control.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/future.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/future.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/future.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/goal-setting-and-monitoring.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/goal-setting-and-monitoring.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/goal-setting-and-monitoring.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/record-replay-cassettes.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/record-replay-cassettes.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/record-replay-cassettes.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/topologies.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/topologies.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/topologies.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/thinking-budget-control.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/thinking-budget-control.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/thinking-budget-control.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/classical.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/classical.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/classical.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/specification-gaming.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/specification-gaming.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/specification-gaming.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one byte",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/cognitive-behavioral.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "one sentence",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/cognitive-behavioral.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "truncated",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/cognitive-behavioral.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/dual-llm-pattern.md <-> pages/product.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/operations-reliability.md <-> pages/graph-of-thoughts.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/autonomy-ladder.md <-> pages/unbounded-agent-loops.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/pass-hat-k.jsonld <-> pages/global-workspace-blackboard.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/sustainability-signal-plane.md <-> pages/metacognitive-monitoring.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/advanced.jsonld <-> pages/curiosity-driven-curriculum.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/multi-agent-debate.jsonld <-> pages/bulkhead-isolation.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/safe-interruptibility.md <-> pages/termination-conditions.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/data-retrieval.md <-> pages/multi-agent-debate.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/unbounded-agent-loops.jsonld <-> pages/evolutionary-prompt-search.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/meaningful-human-control.jsonld <-> pages/foundational.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/memory-cognition.md <-> pages/sdlc.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/reasoning-decision.jsonld <-> pages/advanced.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/memory-context-poisoning.jsonld <-> pages/unbounded-agent-loops.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/future.jsonld <-> pages/error-analysis-coding.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/agent-identity-scoped-credentials.md <-> pages/foundational.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/curiosity-driven-curriculum.jsonld <-> pages/autonomy-ladder.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/generative-agents.jsonld <-> pages/resolution-rate-metrics.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/agentic-supply-chain.jsonld <-> pages/reasoning-decision.jsonld",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "swapped with another file",
+   "class": "C per-item copies (md, jsonld)",
+   "file": "pages/future.md <-> pages/multi-agent-debate.md",
+   "node": false,
+   "python": false
+  },
+  {
+   "kind": "stale file (from another version)",
+   "class": "A named in discovery document",
+   "file": "llms.txt",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "stale file (from another version)",
+   "class": "A named in discovery document",
+   "file": "ledger.jsonl",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "stale file (from another version)",
+   "class": "A named in discovery document",
+   "file": "now.md",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "stale file (from another version)",
+   "class": "A named in discovery document",
+   "file": "skills/index.json",
+   "node": true,
+   "python": true
+  },
+  {
+   "kind": "stale file (from another version)",
+   "class": "A named in discovery document",
+   "file": "chunks.jsonl",
+   "node": true,
+   "python": true
+  }
+ ]
+}

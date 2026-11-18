@@ -1,0 +1,8 @@
+{
+  "name": "agsc-capabilities-study",
+  "version": "1.0.0",
+  "description": "Fifteen capability cases for an AgenticSystemCore node: trust, governance, reuse, human use. Local only, no remote model.",
+  "license": "Apache-2.0",
+  "scripts": { "all": "bash run-all.sh", "report": "node src/report.js" },
+  "dependencies": { "gpt-tokenizer": "2.9.0", "html-to-text": "9.0.5", "minisearch": "7.2.0" }
+}

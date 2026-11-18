@@ -1,0 +1,174 @@
+{
+ "questions": 10,
+ "starts": {
+  "patterns.agenticsystemcore.com": {
+   "discovery_route": {
+    "nodes_found": [
+     "patterns",
+     "main"
+    ],
+    "peer_found": true,
+    "requests_to_get_both_indexes": 4,
+    "bytes_to_get_both_indexes": 293015,
+    "trace": [
+     "https://patterns.agenticsystemcore.com/: peers 1",
+     "https://agenticsystemcore.com/: peers 1"
+    ],
+    "questions_with_both_facts_retrieved": 8,
+    "attribution_correct": 8,
+    "per_question": [
+     {
+      "id": "x01",
+      "both_gold_chunks_in_top6": false,
+      "attribution_correct_for_retrieved_gold": false
+     },
+     {
+      "id": "x02",
+      "both_gold_chunks_in_top6": false,
+      "attribution_correct_for_retrieved_gold": false
+     },
+     {
+      "id": "x03",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x04",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x05",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x06",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x07",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x08",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x09",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x10",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     }
+    ]
+   },
+   "page_crawl_route": {
+    "reached_other_host": true,
+    "pages_fetched": 10,
+    "bytes": 128524,
+    "first_page_of_other_host": "https://agenticsystemcore.com/"
+   },
+   "llms_txt_route": {
+    "names_other_host": false,
+    "other_host_mentions": 0,
+    "says_it_is_a_peer": true
+   }
+  },
+  "agenticsystemcore.com": {
+   "discovery_route": {
+    "nodes_found": [
+     "main",
+     "patterns"
+    ],
+    "peer_found": true,
+    "requests_to_get_both_indexes": 4,
+    "bytes_to_get_both_indexes": 293015,
+    "trace": [
+     "https://agenticsystemcore.com/: peers 1",
+     "https://patterns.agenticsystemcore.com/: peers 1"
+    ],
+    "questions_with_both_facts_retrieved": 8,
+    "attribution_correct": 8,
+    "per_question": [
+     {
+      "id": "x01",
+      "both_gold_chunks_in_top6": false,
+      "attribution_correct_for_retrieved_gold": false
+     },
+     {
+      "id": "x02",
+      "both_gold_chunks_in_top6": false,
+      "attribution_correct_for_retrieved_gold": false
+     },
+     {
+      "id": "x03",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x04",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x05",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x06",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x07",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x08",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x09",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     },
+     {
+      "id": "x10",
+      "both_gold_chunks_in_top6": true,
+      "attribution_correct_for_retrieved_gold": true
+     }
+    ]
+   },
+   "page_crawl_route": {
+    "reached_other_host": true,
+    "pages_fetched": 28,
+    "bytes": 652992,
+    "first_page_of_other_host": "https://patterns.agenticsystemcore.com/"
+   },
+   "llms_txt_route": {
+    "names_other_host": false,
+    "other_host_mentions": 0,
+    "says_it_is_a_peer": false
+   }
+  }
+ },
+ "control_rag_over_both_folders": {
+  "questions_with_both_facts_retrieved": 9,
+  "attribution_by_file_path": "every hit carries its node in the id, so attribution is correct for every retrieved gold file",
+  "note": "A person must already know both folders exist; nothing in a folder says there is a second one."
+ },
+ "mutual_conformance_check": {
+  "exit": 0,
+  "status": "pass"
+ }
+}

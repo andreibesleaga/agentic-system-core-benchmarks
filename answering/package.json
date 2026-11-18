@@ -1,0 +1,15 @@
+{
+  "name": "agsc-answering-study",
+  "version": "1.0.0",
+  "description": "Does a node help an agent find, check and cite facts better than plain pages, llms.txt or retrieval? Local models, with an optional run on hosted models.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "all": "bash run-all.sh"
+  },
+  "dependencies": {
+    "gpt-tokenizer": "2.9.0",
+    "html-to-text": "9.0.5",
+    "minisearch": "7.2.0"
+  }
+}

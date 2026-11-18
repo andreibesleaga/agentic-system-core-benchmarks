@@ -1,0 +1,156 @@
+{
+ "nodes": {
+  "patterns": {
+   "build_a_ms": 2591,
+   "build_b_ms": 2486,
+   "exit": [
+    0,
+    0
+   ],
+   "files_a": 323,
+   "files_b": 323,
+   "identical": 323,
+   "differing": 0,
+   "differing_files": [],
+   "verify": {
+    "exit": 0,
+    "ms": 4486,
+    "status": "pass",
+    "counts": {
+     "error": 0,
+     "warn": 0
+    }
+   }
+  },
+  "main": {
+   "build_a_ms": 7372,
+   "build_b_ms": 7475,
+   "exit": [
+    0,
+    0
+   ],
+   "files_a": 237,
+   "files_b": 237,
+   "identical": 237,
+   "differing": 0,
+   "differing_files": [],
+   "verify": {
+    "exit": 0,
+    "ms": 1561,
+    "status": "pass",
+    "counts": {
+     "error": 0,
+     "warn": 0
+    }
+   }
+  }
+ },
+ "variations": {
+  "different build instant (SOURCE_DATE_EPOCH + 1 day)": {
+   "exit": 0,
+   "err": "",
+   "files_a": 323,
+   "files_b": 323,
+   "identical": 292,
+   "differing": 31,
+   "differing_files": [
+    ".well-known/knowledge-linkset",
+    ".well-known/security.txt",
+    "index.html",
+    "ledger.jsonl",
+    "llms-full.txt",
+    "llms.txt",
+    "now.md",
+    "now/index.html",
+    "query/index.html",
+    "sitemap.xml",
+    "skills/advanced/SKILL.md",
+    "skills/antipatterns/SKILL.md",
+    "skills/classical/SKILL.md",
+    "skills/cognitive-behavioral/SKILL.md",
+    "skills/data-retrieval/SKILL.md"
+   ]
+  },
+  "different time zone (TZ=Asia/Tokyo)": {
+   "exit": 0,
+   "err": "",
+   "files_a": 323,
+   "files_b": 323,
+   "identical": 323,
+   "differing": 0,
+   "differing_files": []
+  },
+  "different locale (LC_ALL=de_DE.UTF-8)": {
+   "exit": 0,
+   "err": "",
+   "files_a": 323,
+   "files_b": 323,
+   "identical": 323,
+   "differing": 0,
+   "differing_files": []
+  },
+  "SOURCE_DATE_EPOCH set to empty (read as unset, warning AGSC-E603)": {
+   "exit": 0,
+   "err": "warn: AGSC-E603 SOURCE_DATE_EPOCH is set but empty; it is read as unset (AGSC-04-09)\n",
+   "files_a": 323,
+   "files_b": 323,
+   "identical": 292,
+   "differing": 31,
+   "differing_files": [
+    ".well-known/knowledge-linkset",
+    ".well-known/security.txt",
+    "index.html",
+    "ledger.jsonl",
+    "llms-full.txt",
+    "llms.txt",
+    "now.md",
+    "now/index.html",
+    "query/index.html",
+    "sitemap.xml",
+    "skills/advanced/SKILL.md",
+    "skills/antipatterns/SKILL.md",
+    "skills/classical/SKILL.md",
+    "skills/cognitive-behavioral/SKILL.md",
+    "skills/data-retrieval/SKILL.md"
+   ]
+  },
+  "different folder path": {
+   "exit": 0,
+   "files_a": 323,
+   "files_b": 323,
+   "identical": 323,
+   "differing": 0,
+   "differing_files": []
+  }
+ },
+ "committed_vs_fresh": {
+  "files_a": 324,
+  "files_b": 323,
+  "identical": 291,
+  "differing": 33,
+  "differing_files": [
+   ".well-known/knowledge-linkset",
+   ".well-known/security.txt",
+   ".well-known/sustainability-data",
+   "_headers",
+   "index.html",
+   "ledger.jsonl",
+   "llms-full.txt",
+   "llms.txt",
+   "now.md",
+   "now/index.html",
+   "query/index.html",
+   "sitemap.xml",
+   "skills/advanced/SKILL.md",
+   "skills/antipatterns/SKILL.md",
+   "skills/classical/SKILL.md"
+  ]
+ },
+ "alternative_bm25_index": {
+  "artefacts": 1,
+  "bytes": 149661,
+  "identical_bytes_in_two_runs": true,
+  "note": "one JSON file; documents sorted by path before indexing"
+ },
+ "method": "Two builds of full copies (git history included) with SOURCE_DATE_EPOCH=1767225600; files compared by SHA-256."
+}

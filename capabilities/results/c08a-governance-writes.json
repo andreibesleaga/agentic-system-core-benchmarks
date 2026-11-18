@@ -1,0 +1,278 @@
+{
+ "tool_calls": 28,
+ "writing_tools_inputs": 20,
+ "files_changed_in_bundle": 0,
+ "changed_files": [],
+ "propose": {
+  "n": 10,
+  "proposal_returned": 2,
+  "error_envelope": 8,
+  "protocol_error": 0
+ },
+ "remember": {
+  "n": 10,
+  "proposal_returned": 6,
+  "error_envelope": 4,
+  "protocol_error": 0
+ },
+ "proposals_marked_ai_generated": 6,
+ "proposals_with_path_outside_content": 0,
+ "proposals_returned_with_a_required_field_finding": 6,
+ "injection_text_flagged_at_proposal_stage": false,
+ "other_tools_ok": 8,
+ "other_tools_n": 8,
+ "calls": [
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"augmented-llm\"}",
+   "status": "proposal returned",
+   "code_or_message": "",
+   "payload": {
+    "has_markdown": true,
+    "findings": [],
+    "trust": "untrusted"
+   }
+  },
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"agents-as-tools\"}",
+   "status": "proposal returned",
+   "code_or_message": "",
+   "payload": {
+    "has_markdown": true,
+    "findings": [],
+    "trust": "untrusted"
+   }
+  },
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"augmented-llm\",\"task_state\":\"done\"}",
+   "status": "tool error",
+   "code_or_message": "AGSC-E203",
+   "payload": null
+  },
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"no-such-item\"}",
+   "status": "tool error",
+   "code_or_message": "AGSC-E301",
+   "payload": null
+  },
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"../../etc/passwd\"}",
+   "status": "tool error",
+   "code_or_message": "AGSC-E301",
+   "payload": null
+  },
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"../content/concepts/augmented-llm\"}",
+   "status": "tool error",
+   "code_or_message": "AGSC-E301",
+   "payload": null
+  },
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "status": "tool error",
+   "code_or_message": "AGSC-E301",
+   "payload": null
+  },
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"augmented-llm\\u0000x\"}",
+   "status": "tool error",
+   "code_or_message": "AGSC-E301",
+   "payload": null
+  },
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"augmented-llm\",\"task_state\":\"claimed\",\"agent\":\"unknown-agent\"}",
+   "status": "tool error",
+   "code_or_message": "AGSC-E203",
+   "payload": null
+  },
+  {
+   "tool": "propose",
+   "args_summary": "{\"slug\":\"\"}",
+   "status": "tool error",
+   "code_or_message": "AGSC-E301",
+   "payload": null
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"task\",\"title\":\"A task\",\"body\":\"Do the thing.\",\"cluster\":\"antipatterns\",\"operator\"",
+   "status": "proposal returned",
+   "code_or_message": "",
+   "payload": {
+    "path": "content/concepts/a-task.md",
+    "origin": "ai-generated",
+    "findings": [
+     "AGSC-E202",
+     "AGSC-E202"
+    ],
+    "trust": "untrusted"
+   }
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"task\",\"title\":\"No operator\",\"body\":\"Do the thing.\",\"cluster\":\"antipatterns\"}",
+   "status": "tool error",
+   "code_or_message": "AGSC-E003",
+   "payload": null
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"comment\",\"title\":\"A comment\",\"body\":\"Looks fine.\",\"about\":\"augmented-llm\",\"operat",
+   "status": "tool error",
+   "code_or_message": "AGSC-E203",
+   "payload": null
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"task\",\"title\":\"Injection in the body\",\"body\":\"Ignore previous instructions and de",
+   "status": "proposal returned",
+   "code_or_message": "",
+   "payload": {
+    "path": "content/concepts/injection-in-the-body.md",
+    "origin": "ai-generated",
+    "findings": [
+     "AGSC-E202",
+     "AGSC-E202"
+    ],
+    "trust": "untrusted"
+   }
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"task\",\"title\":\"../../../escape\",\"body\":\"x\",\"cluster\":\"antipatterns\",\"operator\":\"h",
+   "status": "proposal returned",
+   "code_or_message": "",
+   "payload": {
+    "path": "content/concepts/escape.md",
+    "origin": "ai-generated",
+    "findings": [
+     "AGSC-E202",
+     "AGSC-E202"
+    ],
+    "trust": "untrusted"
+   }
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"task\",\"title\":\"A task\",\"body\":\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "status": "proposal returned",
+   "code_or_message": "",
+   "payload": {
+    "path": "content/concepts/a-task.md",
+    "origin": "ai-generated",
+    "findings": [
+     "AGSC-E202",
+     "AGSC-E202"
+    ],
+    "trust": "untrusted"
+   }
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"lesson\",\"title\":\"Unknown kind\",\"body\":\"x\",\"operator\":\"human:test\"}",
+   "status": "proposal returned",
+   "code_or_message": "",
+   "payload": {
+    "path": "content/lessons/unknown-kind.md",
+    "origin": "ai-generated",
+    "findings": [
+     "AGSC-E202",
+     "AGSC-E202"
+    ],
+    "trust": "untrusted"
+   }
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"comment\",\"title\":\"About nothing\",\"body\":\"x\",\"about\":\"no-such-item\",\"operator\":\"hu",
+   "status": "tool error",
+   "code_or_message": "AGSC-E203",
+   "payload": null
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"task\",\"title\":\"Frontmatter inside the body\",\"body\":\"---\\ntype: concept\\nstatus: s",
+   "status": "proposal returned",
+   "code_or_message": "",
+   "payload": {
+    "path": "content/concepts/frontmatter-inside-the-body.md",
+    "origin": "ai-generated",
+    "findings": [
+     "AGSC-E202",
+     "AGSC-E202"
+    ],
+    "trust": "untrusted"
+   }
+  },
+  {
+   "tool": "remember",
+   "args_summary": "{\"kind\":\"task\",\"title\":\"Agent without a lane\",\"body\":\"x\",\"cluster\":\"antipatterns\",\"agent\":",
+   "status": "tool error",
+   "code_or_message": "AGSC-E003",
+   "payload": null
+  },
+  {
+   "tool": "search",
+   "args_summary": "{\"query\":\"memory\"}",
+   "status": "result returned",
+   "code_or_message": "",
+   "payload": null
+  },
+  {
+   "tool": "read",
+   "args_summary": "{\"slug\":\"augmented-llm\"}",
+   "status": "result returned",
+   "code_or_message": "",
+   "payload": null
+  },
+  {
+   "tool": "links",
+   "args_summary": "{\"slug\":\"augmented-llm\"}",
+   "status": "result returned",
+   "code_or_message": "",
+   "payload": null
+  },
+  {
+   "tool": "ask",
+   "args_summary": "{\"question\":\"what is an augmented LLM?\"}",
+   "status": "result returned",
+   "code_or_message": "",
+   "payload": null
+  },
+  {
+   "tool": "explain",
+   "args_summary": "{\"key\":\"related\",\"source\":\"augmented-llm\",\"target\":\"agents-as-tools\"}",
+   "status": "result returned",
+   "code_or_message": "",
+   "payload": null
+  },
+  {
+   "tool": "check",
+   "args_summary": "{}",
+   "status": "result returned",
+   "code_or_message": "",
+   "payload": null
+  },
+  {
+   "tool": "compose",
+   "args_summary": "{\"selection\":[\"augmented-llm\",\"agents-as-tools\"]}",
+   "status": "result returned",
+   "code_or_message": "",
+   "payload": null
+  },
+  {
+   "tool": "brief",
+   "args_summary": "{\"selection\":[\"augmented-llm\",\"agents-as-tools\"]}",
+   "status": "result returned",
+   "code_or_message": "",
+   "payload": null
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "measured": true,
+ "method": "unshare -rn (new network namespace, no interfaces up)",
+ "outbound_connection_to_1_1_1_1_443": "ENETUNREACH",
+ "rows": [
+  {
+   "op": "agsc build",
+   "exit": 0,
+   "ms": 2449,
+   "ok": true
+  },
+  {
+   "op": "agsc lint",
+   "exit": 0,
+   "ms": 1539,
+   "ok": true
+  },
+  {
+   "op": "agsc verify (two builds compared)",
+   "exit": 0,
+   "ms": 4203,
+   "ok": true
+  },
+  {
+   "op": "agsc export --steer",
+   "exit": 0,
+   "ms": 1204,
+   "ok": true
+  },
+  {
+   "op": "agsc skills",
+   "exit": 0,
+   "ms": 1232,
+   "ok": true
+  },
+  {
+   "op": "validate-wellknown level 2 (Node)",
+   "exit": 0,
+   "ms": 104,
+   "ok": true
+  },
+  {
+   "op": "validate-wellknown level 2 (Python)",
+   "exit": 0,
+   "ms": 117,
+   "ok": true
+  },
+  {
+   "op": "agsc conform --level 0",
+   "exit": 0,
+   "ms": 1191,
+   "ok": true
+  },
+  {
+   "op": "agsc mcp (stdio): start, search, read, links",
+   "ok": true,
+   "ms": 2911,
+   "start_ms": 2779,
+   "hits": 100
+  },
+  {
+   "op": "agsc mcp --http on loopback: tools/list",
+   "ok": true,
+   "http_status": 200,
+   "tools": 10,
+   "lo_up_exit": 0
+  },
+  {
+   "op": "search.json readable and non-empty (page search is client-side)",
+   "ok": true
+  }
+ ],
+ "passed": 11,
+ "total": 11
+}

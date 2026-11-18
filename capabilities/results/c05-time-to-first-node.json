@@ -1,0 +1,104 @@
+{
+ "engine_version_installed": "1.1.0",
+ "commands_run": 6,
+ "hand_written_files": [
+  "sourdough.md",
+  "hydration.md",
+  "oven-spring.md",
+  ".well-known/security.txt"
+ ],
+ "hand_written_file_count": 4,
+ "seconds_total": 22.1,
+ "seconds_without_npm_install": 6.1,
+ "files_built": 57,
+ "files_wrote_reported": null,
+ "has_chunks": true,
+ "has_discovery_document": true,
+ "discovery_check_level2": {
+  "exit": 1,
+  "last_line": "validate-wellknown fail (level 2): 1 input file(s) read, 1 error(s), 0 warning(s)"
+ },
+ "steps_that_failed": [
+  "agsc build straight after init (no security contact, no build instant)",
+  "agsc build without a build instant (not a git repository)"
+ ],
+ "problems": [
+  {
+   "step": "agsc init",
+   "message": "before you build: add .well-known/security.txt with a Contact: line (RFC 9116); lint, build and ci report AGSC-E901 until it exists (AGSC-06-36)",
+   "fix_named": "yes: says what to add or edit"
+  },
+  {
+   "step": "agsc init",
+   "message": "before you build: agsc.config.json names the reference crawler list in site.tdm_crawlers, because the default prose licence adopts the Content Use Terms; edit the list, or name another prose licence to publish no reservation (AGSC-06-18)",
+   "fix_named": "yes: says what to add or edit"
+  },
+  {
+   "step": "agsc build straight after init (no security contact, no build instant)",
+   "message": "error: AGSC-E901 no .well-known/security.txt in the Bundle root, so the published one would carry no Contact: field — RFC 9116 section 2.5.3 says \"This field MUST always be present in a 'security.txt' file\". Nothing is emitted for /.well-known/security.txt (AGSC-06-01, PRD-047)",
+   "fix_named": "partly: names the missing file and says nothing is emitted; the earlier line from init said to add it"
+  },
+  {
+   "step": "agsc build without a build instant (not a git repository)",
+   "message": "error: AGSC-E204 the build instant defaulted to 1970-01-01T00:00:00Z, because this build had no SOURCE_DATE_EPOCH and no git history (AGSC-04-09), so the derived Expires would be 1970-12-31T00:00:00Z — a security contact that expired decades before it was published. RFC 9116 section 2.5.5: \"It is RECOMMENDED that the value of this field be less than a year into the future to avoid staleness\". Commit this Bundle once, so the build instant comes from the git history, or set SOURCE_DATE_EPOCH to the instant you want published; or author an Expires of your own in .well-known/security.txt",
+   "fix_named": "yes: says to commit once, set SOURCE_DATE_EPOCH, or author an Expires"
+  }
+ ],
+ "steps": [
+  {
+   "label": "npm install agentic-system-core (from the registry)",
+   "ms": 16068,
+   "exit": 0,
+   "problems": []
+  },
+  {
+   "label": "write three notes by hand",
+   "ms": 1,
+   "exit": 0,
+   "problems": []
+  },
+  {
+   "label": "agsc init",
+   "ms": 553,
+   "exit": 0,
+   "problems": [
+    "before you build: add .well-known/security.txt with a Contact: line (RFC 9116); lint, build and ci report AGSC-E901 until it exists (AGSC-06-36)",
+    "before you build: agsc.config.json names the reference crawler list in site.tdm_crawlers, because the default prose licence adopts the Content Use Terms; edit the list, or name another prose licence to publish no reservation (AGSC-06-18)"
+   ]
+  },
+  {
+   "label": "agsc build straight after init (no security contact, no build instant)",
+   "ms": 1349,
+   "exit": 1,
+   "problems": [
+    "error: AGSC-E901 no .well-known/security.txt in the Bundle root, so the published one would carry no Contact: field — RFC 9116 section 2.5.3 says \"This field MUST always be present in a 'security.txt' file\". Nothing is emitted for /.well-known/security.txt (AGSC-06-01, PRD-047)"
+   ]
+  },
+  {
+   "label": "write .well-known/security.txt by hand",
+   "ms": 3,
+   "exit": 0,
+   "problems": []
+  },
+  {
+   "label": "agsc build without a build instant (not a git repository)",
+   "ms": 1357,
+   "exit": 1,
+   "problems": [
+    "error: AGSC-E204 the build instant defaulted to 1970-01-01T00:00:00Z, because this build had no SOURCE_DATE_EPOCH and no git history (AGSC-04-09), so the derived Expires would be 1970-12-31T00:00:00Z — a security contact that expired decades before it was published. RFC 9116 section 2.5.5: \"It is RECOMMENDED that the value of this field be less than a year into the future to avoid staleness\". Commit this Bundle once, so the build instant comes from the git history, or set SOURCE_DATE_EPOCH to the instant you want published; or author an Expires of your own in .well-known/security.txt"
+   ]
+  },
+  {
+   "label": "agsc ci (with SOURCE_DATE_EPOCH set)",
+   "ms": 1549,
+   "exit": 0,
+   "problems": []
+  },
+  {
+   "label": "agsc build",
+   "ms": 1268,
+   "exit": 0,
+   "problems": []
+  }
+ ]
+}

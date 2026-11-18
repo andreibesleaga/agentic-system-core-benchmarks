@@ -1,0 +1,53 @@
+{
+  "_": "Allow-list of tools/public-hygiene (in the engine repository) for this repository. Every entry says why the hit is public by intent.",
+  "allow": [
+    {
+      "check": "process",
+      "path": "answering/DECISIONS.md",
+      "text": "Sonnet 5.5",
+      "reason": "the question set and reports record which model wrote or paraphrased the questions; the name is part of the method and of the data"
+    },
+    {
+      "check": "process",
+      "path": "answering/REPORT.md",
+      "text": "Sonnet 5.5",
+      "reason": "the question set and reports record which model wrote or paraphrased the questions; the name is part of the method and of the data"
+    },
+    {
+      "check": "process",
+      "path": "answering/questions/questions.jsonl",
+      "text": "Sonnet 5.5",
+      "reason": "the question set and reports record which model wrote or paraphrased the questions; the name is part of the method and of the data"
+    },
+    {
+      "check": "process",
+      "path": "answering/reports/final-template.md",
+      "text": "Sonnet 5.5",
+      "reason": "the question set and reports record which model wrote or paraphrased the questions; the name is part of the method and of the data"
+    },
+    {
+      "check": "process",
+      "path": "answering/src/paraphrase.js",
+      "text": "Sonnet 5.5",
+      "reason": "the question set and reports record which model wrote or paraphrased the questions; the name is part of the method and of the data"
+    },
+    {
+      "check": "wording",
+      "path": "answering/REPORT.md",
+      "text": "100 %",
+      "reason": "a measured value in a generated results table (every answer of that row was correct), not a claim about the software"
+    },
+    {
+      "check": "wording",
+      "path": "answering/reports/final-template.md",
+      "text": "100 %",
+      "reason": "a measured value in a generated results table (every answer of that row was correct), not a claim about the software"
+    },
+    {
+      "check": "wording",
+      "path": "answering/reports/tables.md",
+      "text": "100 %",
+      "reason": "a measured value in a generated results table (every answer of that row was correct), not a claim about the software"
+    }
+  ]
+}

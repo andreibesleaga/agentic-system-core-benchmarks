@@ -1,0 +1,768 @@
+{
+ "engine": {
+  "level 0": {
+   "exit": 0,
+   "class": "publisher",
+   "fail": 0,
+   "pass": 35,
+   "skip": 2,
+   "total": 37
+  },
+  "level 1": {
+   "exit": 0,
+   "class": "reader",
+   "fail": 0,
+   "pass": 113,
+   "skip": 3,
+   "total": 116
+  },
+  "level 2": {
+   "exit": 0,
+   "class": "writer",
+   "fail": 0,
+   "pass": 266,
+   "skip": 18,
+   "total": 284
+  },
+  "level 3": {
+   "exit": 0,
+   "class": "full-engine",
+   "fail": 0,
+   "pass": 376,
+   "skip": 23,
+   "total": 399
+  }
+ },
+ "python": {
+  "level 0": {
+   "exit": 0,
+   "counts": {
+    "pass": 35,
+    "skip": 2
+   },
+   "total": 37,
+   "areas_run": [
+    "build",
+    "discovery",
+    "frontmatter",
+    "graph",
+    "jcs",
+    "links",
+    "slug"
+   ],
+   "areas_not_run": []
+  },
+  "level 1": {
+   "exit": 0,
+   "counts": {
+    "not-run": 51,
+    "pass": 62,
+    "skip": 3
+   },
+   "total": 116,
+   "areas_run": [
+    "build",
+    "discovery",
+    "frontmatter",
+    "graph",
+    "jcs",
+    "links",
+    "slug"
+   ],
+   "areas_not_run": [
+    "bundle",
+    "lint"
+   ]
+  },
+  "level 2": {
+   "exit": 0,
+   "counts": {
+    "not-run": 151,
+    "skip": 18,
+    "pass": 115
+   },
+   "total": 284,
+   "areas_run": [
+    "build",
+    "discovery",
+    "frontmatter",
+    "graph",
+    "jcs",
+    "links",
+    "slug"
+   ],
+   "areas_not_run": [
+    "adopt",
+    "boards",
+    "boundary",
+    "bundle",
+    "chunks",
+    "export",
+    "import",
+    "ledger",
+    "lint"
+   ]
+  },
+  "level 3": {
+   "exit": 0,
+   "counts": {
+    "not-run": 261,
+    "skip": 23,
+    "pass": 115
+   },
+   "total": 399,
+   "areas_run": [
+    "build",
+    "discovery",
+    "frontmatter",
+    "graph",
+    "jcs",
+    "links",
+    "slug"
+   ],
+   "areas_not_run": [
+    "adopt",
+    "boards",
+    "boundary",
+    "bundle",
+    "chunks",
+    "cli",
+    "compose",
+    "conform",
+    "export",
+    "import",
+    "ledger",
+    "lint",
+    "prov"
+   ]
+  }
+ },
+ "agreement": {
+  "real_nodes": {
+   "patterns": [
+    {
+     "level": 0,
+     "node_exit": 0,
+     "python_exit": 0,
+     "agree": true
+    },
+    {
+     "level": 1,
+     "node_exit": 0,
+     "python_exit": 0,
+     "agree": true
+    },
+    {
+     "level": 2,
+     "node_exit": 0,
+     "python_exit": 0,
+     "agree": true
+    },
+    {
+     "level": 3,
+     "node_exit": 0,
+     "python_exit": 0,
+     "agree": true
+    }
+   ],
+   "main": [
+    {
+     "level": 0,
+     "node_exit": 0,
+     "python_exit": 0,
+     "agree": true
+    },
+    {
+     "level": 1,
+     "node_exit": 0,
+     "python_exit": 0,
+     "agree": true
+    },
+    {
+     "level": 2,
+     "node_exit": 0,
+     "python_exit": 0,
+     "agree": true
+    },
+    {
+     "level": 3,
+     "node_exit": 0,
+     "python_exit": 0,
+     "agree": true
+    }
+   ]
+  },
+  "damaged_documents": {
+   "n": 40,
+   "same_verdict": 40,
+   "same_error_codes": 40,
+   "both_rejected": 40,
+   "rows": [
+    {
+     "mutation": "one character of a digest changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a link loses its digest",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E202",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E202",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "anchor changed to http",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a relation renamed to an unregistered one",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E209",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E209",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "extra whitespace (not canonical)",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "chunk count changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "ledger length changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "bundle hash changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E210"
+     ],
+     "python_codes": [
+      "AGSC-E210"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "not valid JSON (truncated)",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a link target removed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "one character of a digest changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E210"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E210"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a link loses its digest",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E202",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E202",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "anchor changed to http",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a relation renamed to an unregistered one",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E209",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E209",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "extra whitespace (not canonical)",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "chunk count changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "ledger length changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "bundle hash changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E210"
+     ],
+     "python_codes": [
+      "AGSC-E210"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "not valid JSON (truncated)",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a link target removed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "one character of a digest changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E210"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E210"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a link loses its digest",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E202",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E202",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "anchor changed to http",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a relation renamed to an unregistered one",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E209",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E209",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "extra whitespace (not canonical)",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "chunk count changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "ledger length changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "bundle hash changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E210"
+     ],
+     "python_codes": [
+      "AGSC-E210"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "not valid JSON (truncated)",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a link target removed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "one character of a digest changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E210"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E210"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a link loses its digest",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E202",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E202",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "anchor changed to http",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a relation renamed to an unregistered one",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E202",
+      "AGSC-E209",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E202",
+      "AGSC-E209",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "extra whitespace (not canonical)",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "chunk count changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "ledger length changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "bundle hash changed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E210"
+     ],
+     "python_codes": [
+      "AGSC-E210"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "not valid JSON (truncated)",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201"
+     ],
+     "python_codes": [
+      "AGSC-E201"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    },
+    {
+     "mutation": "a link target removed",
+     "node_exit": 1,
+     "python_exit": 1,
+     "node_codes": [
+      "AGSC-E201",
+      "AGSC-E601"
+     ],
+     "python_codes": [
+      "AGSC-E201",
+      "AGSC-E601"
+     ],
+     "same_verdict": true,
+     "same_codes": true
+    }
+   ]
+  }
+ },
+ "vector_files_checked": {
+  "node_tool_last_line": "validate-vectors: 399 input file(s) read, 399 vectors, 0 error, 0 warn; declared areas with no vector file (informational, AGSC-09-90): skills adapters channels harness run",
+  "python_exit": 0
+ }
+}

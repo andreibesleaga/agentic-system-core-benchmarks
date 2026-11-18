@@ -1,0 +1,13 @@
+# REUSE 3.x layout (https://reuse.software/spec-3.3/): one annotation per licence area, no SPDX header in the files.
+version = 1
+
+[[annotations]]
+path = ["**"]
+SPDX-FileCopyrightText = "2026 Andrei N. Besleaga"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["answering/questions/**", "answering/results/**", "answering/reports/**", "answering/REPORT.md", "capabilities/results/**", "capabilities/REPORT.md"]
+SPDX-FileCopyrightText = "2026 Andrei N. Besleaga"
+SPDX-License-Identifier = "CC-BY-4.0"
+precedence = "closest"

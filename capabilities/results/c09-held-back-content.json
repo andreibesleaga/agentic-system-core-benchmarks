@@ -1,0 +1,19 @@
+{
+ "tools_listed": 10,
+ "resources_listed": 72,
+ "items_in_bundle": 173,
+ "published_items_incl_clusters": 70,
+ "held_back_items": 103,
+ "held_back_by_status": {
+  "draft": 103
+ },
+ "held_back_found_on_published_surfaces": 0,
+ "mcp_read_returns_held_back": 103,
+ "mcp_links_returns_held_back": 103,
+ "mcp_search_finds_held_back_by_title": 103,
+ "mcp_read_marks_draft_in_result": 103,
+ "ask_asked": 30,
+ "ask_cites_held_back": 30,
+ "control_published_only_copy_read_returns_held_back": 0,
+ "documented": "spec/00-overview.md AGSC-00-05 and spec/01-bundle.md AGSC-01-26: the local tool server is the author’s own tool over the author’s Bundle and reads drafts; it is not a published surface."
+}
