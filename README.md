@@ -10,7 +10,7 @@ Check the figures in one command, without a model, a network or an install:
 node verify.js          # Node 18 or newer; prints each figure next to the page value; exit code 1 if any differs
 ```
 
-## The two studies
+## The studies
 
 **`answering/`: question answering.**
 - Sixty questions about two small public nodes (50 and 14 items): 40 answered by one item, 10 by two, 10 not answered in the node.
@@ -19,6 +19,12 @@ node verify.js          # Node 18 or newer; prints each figure next to the page 
 - Models: `qwen2.5-coder:7b` and `gemma3:4b` locally; `anthropic/claude-haiku-5.5` and `anthropic/claude-sonnet-5.5` through a hosted endpoint (both runs stopped at their token caps, so those rows are incomplete).
 - Result in short: the node's tools beat the page routes; BM25 retrieval was as accurate and cheaper per answer. Details in `answering/REPORT.md`.
 - A second question set, written by a model of another family, with a second reading of the scores: `answering/outside/README.md`.
+- The first set by model, with a model of another vendor added on 21 Nov 2026: `answering/MORE-MODELS.md` (`node answering/more-models.js`).
+
+**`graph/`: questions about relations.**
+- Forty-nine questions whose answers are sets of cards, made by templates from the graphs three sites publish: neighbours, typed links in both directions, two steps, common neighbours, relations kept by cluster, dependency chains, two sites, and questions where no card fits.
+- Four routes: pages, BM25 retrieval, the node tools without the relation tools, and the node tools with them.
+- Result in short: retrieval of passages answered about one question in five; pages, which this engine builds from the graph, answered the most; the relation tools answered 58 % with fewer tokens and were the most reliable on "none". Details and limits in `graph/README.md`.
 
 **`capabilities/`: fifteen cases.**
 - Tamper detection, citation checkability, reproducible build, one source with many outputs, time to a first node, typed-link questions, cross-node questions, governed writes and injection samples, held-back content, scale, reading cost, export and import round trips, conformance with a second implementation, offline operation, and the graph read by independent RDF tools.
@@ -131,6 +137,7 @@ README.md  NOTICE  LICENSE  LICENSE-DATA  LICENSES/  REUSE.toml
 verify.js              the check above
 answering/             harness, questions (with FROZEN.sha256), raw rows, REPORT.md, DECISIONS.md, run scripts
 answering/outside/     the second question set (20-21 Nov 2026): questions, raw rows, two tables, the reading
+graph/                 the graph study (21-22 Nov 2026): templates, questions, raw rows, tables, tests
 capabilities/          fifteen case scripts, results, REPORT.md, DECISIONS.md, run scripts
 ```
 
