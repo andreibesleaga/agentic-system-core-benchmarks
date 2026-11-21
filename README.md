@@ -18,6 +18,7 @@ node verify.js          # Node 18 or newer; prints each figure next to the page 
 - A program scores each answer against facts written down before any run; a hand reading of 30 answers is recorded.
 - Models: `qwen2.5-coder:7b` and `gemma3:4b` locally; `anthropic/claude-haiku-5.5` and `anthropic/claude-sonnet-5.5` through a hosted endpoint (both runs stopped at their token caps, so those rows are incomplete).
 - Result in short: the node's tools beat the page routes; BM25 retrieval was as accurate and cheaper per answer. Details in `answering/REPORT.md`.
+- A second question set, written by a model of another family, with a second reading of the scores: `answering/outside/README.md`.
 
 **`capabilities/`: fifteen cases.**
 - Tamper detection, citation checkability, reproducible build, one source with many outputs, time to a first node, typed-link questions, cross-node questions, governed writes and injection samples, held-back content, scale, reading cost, export and import round trips, conformance with a second implementation, offline operation, and the graph read by independent RDF tools.
@@ -129,6 +130,7 @@ The raw rows were checked for private paths, keys and personal data before publi
 README.md  NOTICE  LICENSE  LICENSE-DATA  LICENSES/  REUSE.toml
 verify.js              the check above
 answering/             harness, questions (with FROZEN.sha256), raw rows, REPORT.md, DECISIONS.md, run scripts
+answering/outside/     the second question set (20-21 Nov 2026): questions, raw rows, two tables, the reading
 capabilities/          fifteen case scripts, results, REPORT.md, DECISIONS.md, run scripts
 ```
 
