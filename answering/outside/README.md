@@ -34,6 +34,22 @@ The reader was a language model, Claude Fable 5.2: newer than the model that ans
 another family than the model that wrote the questions. It is a second, model-based reading, not a grading by a
 person. The rule it applied and the answers it read are in the files below, so anyone can read them again.
 
+## More models (21 Nov 2026, late)
+
+The same 60 questions were then answered by `deepseek/deepseek-v4.1-flash` (all four routes), and six answerable
+questions (`../../graph/sample-top.json`) by three high-priced models at low reasoning effort (three routes). A reader
+read every answer the program rejected, with model and route hidden (`rejected-read-more.json`). After the reading:
+
+| Model | Plain pages | Node tools | Retrieval (BM25) |
+|---|---|---|---|
+| `deepseek/deepseek-v4.1-flash` (50 questions) | 72.0 % | 96.0 % | 96.0 % |
+| `openai/gpt-6.2-sol` (6 questions) | 5/6 | 6/6 | 6/6 |
+| `google/gemini-4-hydrogen` (6 questions) | 6/6 | 6/6 | 6/6 |
+| `x-ai/grok-4.7` (6 questions) | 4/6 | 6/6 | 6/6 |
+
+`READ-B.md` has every model with the program's score, the intervals, abstentions and tokens. The new runs had an
+answer limit of 1,500 tokens (`BENCH_MAX_ANSWER_TOKENS`); the first run had 400.
+
 ## Files
 
 | File | What it is |
@@ -44,7 +60,7 @@ person. The rule it applied and the answers it read are in the files below, so a
 | `report-b.js`, `TABLE-B.md` | The program's scores for both sets, by route. |
 | `grading-sheet.js`, `GRADE-50.md`, `grade-50-key.json` | A seeded sample of 50 answers with the route hidden, the reader's grade under each, and the key (route and program score). |
 | `agreement.js` | Agreement between the grades in `GRADE-50.md` and the program: 43 of 50, Cohen's kappa 0.64; all seven disagreements are answers the program rejected and the reader accepted. |
-| `rejected-read.json`, `read-table.js`, `READ-B.md` | The reading of the other 63 rejected answers, and the table after the reading. |
+| `rejected-read.json`, `rejected-read-more.json`, `read-table.js`, `READ-B.md` | The reading of the other 63 rejected answers of the first run, the reading for the later models, and the table after the reading. |
 
 ## Re-run
 

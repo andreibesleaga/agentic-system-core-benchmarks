@@ -24,9 +24,11 @@ function callsFrom(message, toolNames) {
 
 /**
  * @param {{model:string, seed:number, system:string, question:string, tools:object[],
- *          exec:(name:string,args:object)=>Promise<string>}} o
+ *          exec:(name:string,args:object)=>Promise<string>, format?:string, retryEmpty?:boolean}} o  format: the closing instruction (default: FORMAT);
+ *   retryEmpty: ask once more when the final answer is empty (the graph study; the answering study counts it as wrong)
  */
 async function runToolAgent(o) {
+  const format = o.format || FORMAT;
   const messages = [{ role: 'system', content: o.system }, { role: 'user', content: o.question }, ...(o.prelude || [])];
   const names = o.tools.map((t) => t.function.name);
   const calls = [];
@@ -52,9 +54,15 @@ async function runToolAgent(o) {
     }
   }
   if (draft) messages.push({ role: 'assistant', content: draft });
-  const fin = await chat({ model: o.model, seed: o.seed, messages: [...messages, { role: 'user', content: FORMAT }] });
+  let fin = await chat({ model: o.model, seed: o.seed, messages: [...messages, { role: 'user', content: format }] });
   promptTokens += fin.promptTokens; completionTokens += fin.completionTokens;
-  return { answer: (fin.message.content || '').trim(), toolCalls: calls, promptTokens, completionTokens, steps: calls.length + 1, contextStop, messages: [...messages, { role: 'user', content: FORMAT }, fin.message] };
+  if (o.retryEmpty && !(fin.message.content || '').trim()) {
+    // Some models answer in their working turn and then return nothing. Ask again without that turn.
+    const base = draft ? messages.slice(0, -1) : messages;
+    fin = await chat({ model: o.model, seed: o.seed, messages: [...base, { role: 'user', content: format }] });
+    promptTokens += fin.promptTokens; completionTokens += fin.completionTokens;
+  }
+  return { answer: (fin.message.content || '').trim(), toolCalls: calls, promptTokens, completionTokens, steps: calls.length + 1, contextStop, messages: [...messages, { role: 'user', content: format }, fin.message] };
 }
 
 module.exports = { runToolAgent, callsFrom, cap };

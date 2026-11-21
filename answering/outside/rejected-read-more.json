@@ -1,0 +1,474 @@
+{
+ "reader": "Claude Fable 5.2, 21 Nov 2026 (late); model and route hidden while reading; rule as in GRADE-50.md",
+ "rows": [
+  {
+   "model": "x-ai/grok-4.7",
+   "question_id": "b23",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "openai/gpt-6.2-sol",
+   "question_id": "b23",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "x-ai/grok-4.7",
+   "question_id": "b18",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "google/gemini-4-hydrogen",
+   "question_id": "b46",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "openai/gpt-6.2-sol",
+   "question_id": "b23",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "openai/gpt-6.2-sol",
+   "question_id": "b23",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "google/gemini-4-hydrogen",
+   "question_id": "b18",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "google/gemini-4-hydrogen",
+   "question_id": "b12",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "google/gemini-4-hydrogen",
+   "question_id": "b18",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "openai/gpt-6.2-sol",
+   "question_id": "b46",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "x-ai/grok-4.7",
+   "question_id": "b46",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "openai/gpt-6.2-sol",
+   "question_id": "b18",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "openai/gpt-6.2-sol",
+   "question_id": "b18",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b35",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b16",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b17",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b03",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "answers from another card; does not give the reason the gold item states"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b35",
+   "condition": "C2",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b46",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b17",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b35",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b27",
+   "condition": "C3",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b17",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b51",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b01",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b17",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b01",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b04",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b14",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b57",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b01",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b01",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b27",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b04",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "no answer"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b54",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "describes Links, not the source entries the question is about"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b57",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b07",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b13",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b07",
+   "condition": "C3",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b54",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "describes Links, not the source entries the question is about"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b31",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b23",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b54",
+   "condition": "C2",
+   "reader_correct": false,
+   "note": "describes Links, not the source entries the question is about"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b07",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b55",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b23",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b22",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b29",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b05",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b31",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b29",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b32",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b32",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b55",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b18",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b32",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b26",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b05",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "no answer"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b12",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b22",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b03",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "answers from another card; does not give the reason the gold item states"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b46",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b16",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b32",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b26",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b18",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "model": "deepseek/deepseek-v4.1-flash",
+   "question_id": "b18",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  }
+ ]
+}

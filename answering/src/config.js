@@ -20,7 +20,7 @@ module.exports = {
   OLLAMA: 'http://127.0.0.1:11434',
   SEEDS: [1, 2, 3],
   /** Identical for every condition and model. */
-  LIMITS: { toolCalls: 8, numCtx: Number(process.env.BENCH_NUM_CTX) || 8192, toolResultChars: 3500, maxAnswerTokens: 400, topK: 5 },
+  LIMITS: { toolCalls: 8, numCtx: Number(process.env.BENCH_NUM_CTX) || 8192, toolResultChars: 3500, maxAnswerTokens: Number(process.env.BENCH_MAX_ANSWER_TOKENS) || 400, topK: 5 },
   EPOCH: '1767225600',
   NODE_NAMES: { patterns: 'AgenticSystemCore Graph (patterns.agenticsystemcore.com)', main: 'AgenticSystemCore (agenticsystemcore.com)' },
   CONDITIONS: ['C0', 'C0h', 'C1', 'C1h', 'C2', 'C2u', 'C2b', 'C3', 'C4'],
