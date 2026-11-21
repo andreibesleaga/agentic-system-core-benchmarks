@@ -2,6 +2,7 @@
 /**
  * Runs the study. Resumable: a row already in the output file is never run again.
  * node src/runner.js --model qwen2.5-coder:7b --conds C0,C1,C2,C3,C4 --seeds 1,2,3 [--only q01,q02] [--out file]
+ *   [--questions file]   another question set in the same format (default questions/questions.jsonl)
  */
 const fs = require('node:fs');
 const path = require('node:path');
@@ -12,7 +13,7 @@ const { scoreAnswer } = require('./scorer');
 
 const arg = (name, dflt) => { const i = process.argv.indexOf(`--${name}`); return i > 0 ? process.argv[i + 1] : dflt; };
 
-const loadQuestions = (only) => fs.readFileSync(path.join(cfg.STUDY, 'questions/questions.jsonl'), 'utf8')
+const loadQuestions = (only) => fs.readFileSync(path.resolve(cfg.STUDY, arg('questions', 'questions/questions.jsonl')), 'utf8')
   .split('\n').filter(Boolean).map((l) => JSON.parse(l)).filter((q) => !only || only.includes(q.id));
 
 const keyOf = (r) => `${r.question_id}|${r.condition}|${r.model}|${r.seed}`;

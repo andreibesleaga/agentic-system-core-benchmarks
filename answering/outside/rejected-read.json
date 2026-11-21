@@ -1,0 +1,446 @@
+{
+ "reader": "Claude Fable 5.2, 21 Nov 2026; route hidden while reading; see GRADE-50.md",
+ "rows": [
+  {
+   "n": 1,
+   "question_id": "b16",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 2,
+   "question_id": "b46",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "answer cut off before the fact"
+  },
+  {
+   "n": 3,
+   "question_id": "b45",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 4,
+   "question_id": "b46",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 5,
+   "question_id": "b35",
+   "condition": "C2",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 6,
+   "question_id": "b30",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 7,
+   "question_id": "b35",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 8,
+   "question_id": "b45",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 9,
+   "question_id": "b35",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "no answer"
+  },
+  {
+   "n": 10,
+   "question_id": "b19",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 11,
+   "question_id": "b17",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 12,
+   "question_id": "b17",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 13,
+   "question_id": "b17",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 14,
+   "question_id": "b27",
+   "condition": "C3",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 15,
+   "question_id": "b01",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 16,
+   "question_id": "b56",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 17,
+   "question_id": "b14",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 18,
+   "question_id": "b51",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 19,
+   "question_id": "b51",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 20,
+   "question_id": "b57",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 21,
+   "question_id": "b04",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 22,
+   "question_id": "b57",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 23,
+   "question_id": "b15",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 24,
+   "question_id": "b53",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 25,
+   "question_id": "b13",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 26,
+   "question_id": "b13",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 27,
+   "question_id": "b49",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "no answer"
+  },
+  {
+   "n": 28,
+   "question_id": "b53",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 29,
+   "question_id": "b49",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "no answer"
+  },
+  {
+   "n": 30,
+   "question_id": "b54",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "no answer"
+  },
+  {
+   "n": 31,
+   "question_id": "b13",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 32,
+   "question_id": "b07",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 33,
+   "question_id": "b07",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 34,
+   "question_id": "b31",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 35,
+   "question_id": "b44",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "no answer"
+  },
+  {
+   "n": 36,
+   "question_id": "b23",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 37,
+   "question_id": "b07",
+   "condition": "C3",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 38,
+   "question_id": "b23",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 39,
+   "question_id": "b31",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 40,
+   "question_id": "b23",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 41,
+   "question_id": "b55",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 42,
+   "question_id": "b29",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 43,
+   "question_id": "b29",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 44,
+   "question_id": "b55",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 45,
+   "question_id": "b29",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 46,
+   "question_id": "b10",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 47,
+   "question_id": "b22",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 48,
+   "question_id": "b22",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 49,
+   "question_id": "b05",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 50,
+   "question_id": "b32",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 51,
+   "question_id": "b05",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 52,
+   "question_id": "b26",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 53,
+   "question_id": "b32",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 54,
+   "question_id": "b26",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 55,
+   "question_id": "b18",
+   "condition": "C3",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 56,
+   "question_id": "b12",
+   "condition": "C0",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 57,
+   "question_id": "b18",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 58,
+   "question_id": "b12",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 59,
+   "question_id": "b12",
+   "condition": "C1",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  },
+  {
+   "n": 60,
+   "question_id": "b03",
+   "condition": "C1",
+   "reader_correct": false,
+   "note": "abstained"
+  },
+  {
+   "n": 61,
+   "question_id": "b03",
+   "condition": "C2",
+   "reader_correct": false,
+   "note": "no answer"
+  },
+  {
+   "n": 62,
+   "question_id": "b03",
+   "condition": "C0",
+   "reader_correct": false,
+   "note": "no answer"
+  },
+  {
+   "n": 63,
+   "question_id": "b46",
+   "condition": "C2",
+   "reader_correct": true,
+   "note": "states the fact in other words"
+  }
+ ]
+}

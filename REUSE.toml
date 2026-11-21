@@ -7,7 +7,7 @@ SPDX-FileCopyrightText = "2026 Andrei N. Besleaga"
 SPDX-License-Identifier = "Apache-2.0"
 
 [[annotations]]
-path = ["answering/questions/**", "answering/results/**", "answering/reports/**", "answering/REPORT.md", "capabilities/results/**", "capabilities/REPORT.md"]
+path = ["answering/questions/**", "answering/results/**", "answering/reports/**", "answering/REPORT.md", "answering/outside/questions-b.jsonl", "answering/outside/FROZEN-B.sha256", "answering/outside/results/**", "answering/outside/TABLE-B.md", "answering/outside/READ-B.md", "answering/outside/GRADE-50.md", "answering/outside/grade-50-key.json", "answering/outside/rejected-read.json", "capabilities/results/**", "capabilities/REPORT.md"]
 SPDX-FileCopyrightText = "2026 Andrei N. Besleaga"
 SPDX-License-Identifier = "CC-BY-4.0"
 precedence = "closest"
