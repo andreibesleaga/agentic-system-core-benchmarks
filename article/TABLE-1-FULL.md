@@ -2,9 +2,14 @@
 
 For the article "Documentation Becoming Knowledge That AI Agents Can Cite and Readers Can Check" by Andrei N. Besleaga,
 submitted to IEEE Software. The article prints a short version of Table 1; this is the full table, with the evidence
-for every row. Reference numbers in brackets are those of the article. The figures can be recomputed from the
-benchmarks repository, https://github.com/andreibesleaga/agentic-system-core-benchmarks (`node verify.js`), and
-from the reports named in its README.
+for every row. Reference numbers in brackets are those of the article. Most figures are recomputed by `node verify.js`
+in the benchmarks repository, https://github.com/andreibesleaga/agentic-system-core-benchmarks, or come from its
+reports (the second question set and its reading in `answering/outside/`, the relation study in `graph/`). The others
+come from the engine's own measurement record, `docs/MEASUREMENTS.md` in the engine repository, as the benchmarks
+README lists: 530 of 536 equal calls, 250 pages with 0 accessibility violations, 108 of 108 seeded faults with 14 of 14
+controls and 16 of 16 hostile discovery documents, the build under another time zone and locale, and the scale figures.
+The table is the one submitted on 23 November 2026, word for word, except that one cell (repeatable builds) now gives
+the two build results separately.
 
 *Table 1 (full). Problems that agents and teams meet today, what the format does about each, and the evidence.*
 
@@ -27,6 +32,6 @@ from the reports named in its README.
 | A model in the browser cannot use a site | The same tools in the page through WebMCP [12]; WebAIAssist, a browser extension, gives them to a local model, so the conversation stays on the device | Chrome's built-in model with extension 0.1.1: a tool and a valid answer on 10 of 10 questions; WebMCP conformance 16 of 16 in Chrome; 530 of 536 calls return the same values as the tool server, and the other 6 differ as the specification requires |
 | Knowledge locked into one tool or vendor; unclear terms for AI use | Static files on any host; an Apache-2.0 engine; `llms.txt` [2]; instruction files for coding tools; export and re-import; one licence policy in three machine-readable forms | 11 of 11 export and re-import pairs return every item intact; instruction files for 11 coding tools carry identical bytes; the licence is readable in `robots.txt`, a text-and-data-mining reservation and the graph |
 | Nobody can tell who wrote what, or whether a model did | Provenance on every item; every merged change in a hash-linked ledger | A changed ledger is among the 33 changes caught |
-| Two builds differ, so nothing can be verified | A repeatable build and a conformance suite with four levels; the lowest needs only static files | 560 of 560 files identical across two builds, and under another time zone and locale; 376 test cases pass; the Python checker agrees on the 115 it runs |
+| Two builds differ, so nothing can be verified | A repeatable build and a conformance suite with four levels; the lowest needs only static files | 560 of 560 files identical across two builds; 61 of 61 identical under another time zone and locale; 376 test cases pass; the Python checker agrees on the 115 it runs |
 | Tools that are hard to start with or to trust | Thirteen task guides; a published crosswalk to eight frameworks, among them the EU AI Act, NIST AI RMF, GDPR and WCAG | 13 of 13 guides run as written; a new site in six commands and 22 seconds, with two failed steps on the way |
 | Working without a network, for every reader, at scale | Static files; pages checked for accessibility | 11 of 11 operations work offline; 0 automated (axe-core) violations on 250 pages; 10,000 items built in 119 seconds |
